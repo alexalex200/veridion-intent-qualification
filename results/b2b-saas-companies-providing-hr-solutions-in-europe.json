@@ -1,0 +1,275 @@
+{
+  "query": "B2B SaaS companies providing HR solutions in Europe",
+  "results": [
+    {
+      "operational_name": "ASCIA",
+      "website": "ascia.pt",
+      "country": "pt",
+      "final_score": 0.5601,
+      "score_breakdown": {
+        "embedding": 0.2076,
+        "naics": 1.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ]
+    },
+    {
+      "operational_name": "HRWare Consulting",
+      "website": "hrware.de",
+      "country": "de",
+      "final_score": 0.525,
+      "score_breakdown": {
+        "embedding": 0.1913,
+        "naics": 1.0,
+        "keyword": 0.5556
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ]
+    },
+    {
+      "operational_name": "Globant",
+      "website": "globant.com",
+      "country": "lu",
+      "final_score": 0.5164,
+      "score_breakdown": {
+        "embedding": 0.1106,
+        "naics": 1.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ]
+    },
+    {
+      "operational_name": "Atos",
+      "website": "atos.net",
+      "country": "fr",
+      "final_score": 0.4541,
+      "score_breakdown": {
+        "embedding": 0.0339,
+        "naics": 1.0,
+        "keyword": 0.5556
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ]
+    },
+    {
+      "operational_name": "Tietoevry",
+      "website": "tietoevry.com",
+      "country": "fi",
+      "final_score": 0.3961,
+      "score_breakdown": {
+        "embedding": 0.0283,
+        "naics": 1.0,
+        "keyword": 0.3333
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ]
+    },
+    {
+      "operational_name": "Krefter",
+      "website": "krefter.no",
+      "country": "no",
+      "final_score": 0.3898,
+      "score_breakdown": {
+        "embedding": 0.0143,
+        "naics": 1.0,
+        "keyword": 0.3333
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ]
+    },
+    {
+      "operational_name": "Bizneo HR",
+      "website": "bizneo.com",
+      "country": "es",
+      "final_score": 0.3701,
+      "score_breakdown": {
+        "embedding": 0.2669,
+        "naics": 0.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ]
+    },
+    {
+      "operational_name": "Personio",
+      "website": null,
+      "country": "de",
+      "final_score": 0.3694,
+      "score_breakdown": {
+        "embedding": 0.2654,
+        "naics": 0.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ]
+    },
+    {
+      "operational_name": "PMC Optimized",
+      "website": null,
+      "country": "gb",
+      "final_score": 0.3675,
+      "score_breakdown": {
+        "embedding": 0.0265,
+        "naics": 1.0,
+        "keyword": 0.2222
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ]
+    },
+    {
+      "operational_name": "Sincron HR",
+      "website": "sincronhr.com",
+      "country": "ro",
+      "final_score": 0.3651,
+      "score_breakdown": {
+        "embedding": 0.2557,
+        "naics": 0.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ]
+    },
+    {
+      "operational_name": "Pandap\u00e9",
+      "website": "pandape.com",
+      "country": "gb",
+      "final_score": 0.3647,
+      "score_breakdown": {
+        "embedding": 0.2549,
+        "naics": 0.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ]
+    },
+    {
+      "operational_name": "Novative",
+      "website": "novative.com",
+      "country": "ch",
+      "final_score": 0.3645,
+      "score_breakdown": {
+        "embedding": 0.2545,
+        "naics": 0.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ]
+    },
+    {
+      "operational_name": "Telef\u00f3nica Venture Builder",
+      "website": "telefonica.com",
+      "country": "es",
+      "final_score": 0.3637,
+      "score_breakdown": {
+        "embedding": 0.0181,
+        "naics": 1.0,
+        "keyword": 0.2222
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ]
+    },
+    {
+      "operational_name": "BambooHR",
+      "website": "bamboohr.eu",
+      "country": "ie",
+      "final_score": 0.3534,
+      "score_breakdown": {
+        "embedding": 0.2299,
+        "naics": 0.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ]
+    },
+    {
+      "operational_name": "ARMAI",
+      "website": "armai.org",
+      "country": "de",
+      "final_score": 0.3305,
+      "score_breakdown": {
+        "embedding": 0.0061,
+        "naics": 1.0,
+        "keyword": 0.1111
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ]
+    }
+  ]
+}

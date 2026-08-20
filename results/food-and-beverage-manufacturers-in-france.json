@@ -1,0 +1,260 @@
+{
+  "query": "Food and beverage manufacturers in France",
+  "results": [
+    {
+      "operational_name": "Domaine Godeau",
+      "website": null,
+      "country": "fr",
+      "final_score": 0.7205,
+      "score_breakdown": {
+        "embedding": 0.3789,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "food_beverage"
+      ]
+    },
+    {
+      "operational_name": "Dechelette Estate",
+      "website": null,
+      "country": "fr",
+      "final_score": 0.7123,
+      "score_breakdown": {
+        "embedding": 0.3606,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "food_beverage"
+      ]
+    },
+    {
+      "operational_name": "La P\u00e9ro",
+      "website": "la-pero.fr",
+      "country": "fr",
+      "final_score": 0.6989,
+      "score_breakdown": {
+        "embedding": 0.331,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "food_beverage"
+      ]
+    },
+    {
+      "operational_name": "GreenLeaf Mate",
+      "website": "greenleaf-mate.com",
+      "country": "fr",
+      "final_score": 0.6689,
+      "score_breakdown": {
+        "embedding": 0.2643,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "food_beverage"
+      ]
+    },
+    {
+      "operational_name": "Riviera Kombucha",
+      "website": "rivierakombucha.com",
+      "country": "fr",
+      "final_score": 0.6661,
+      "score_breakdown": {
+        "embedding": 0.2579,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "food_beverage"
+      ]
+    },
+    {
+      "operational_name": "Auvergnat Cola",
+      "website": "auvergnatcola.com",
+      "country": "fr",
+      "final_score": 0.6599,
+      "score_breakdown": {
+        "embedding": 0.2442,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "food_beverage"
+      ]
+    },
+    {
+      "operational_name": "Geyer",
+      "website": null,
+      "country": "fr",
+      "final_score": 0.6525,
+      "score_breakdown": {
+        "embedding": 0.3389,
+        "naics": 1.0,
+        "keyword": 0.8
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "food_beverage"
+      ]
+    },
+    {
+      "operational_name": "L'Essinganaise",
+      "website": "lessinganaise.com",
+      "country": "fr",
+      "final_score": 0.6522,
+      "score_breakdown": {
+        "embedding": 0.2271,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "food_beverage"
+      ]
+    },
+    {
+      "operational_name": "Elixia",
+      "website": "elixia.bio",
+      "country": "fr",
+      "final_score": 0.6475,
+      "score_breakdown": {
+        "embedding": 0.2166,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "food_beverage"
+      ]
+    },
+    {
+      "operational_name": "Conserverie Fourmi",
+      "website": "conserverie-fourmi.fr",
+      "country": "fr",
+      "final_score": 0.6374,
+      "score_breakdown": {
+        "embedding": 0.3054,
+        "naics": 1.0,
+        "keyword": 0.8
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "food_beverage"
+      ]
+    },
+    {
+      "operational_name": "Fermenting & Co",
+      "website": "fermentingandco.fr",
+      "country": "fr",
+      "final_score": 0.6371,
+      "score_breakdown": {
+        "embedding": 0.1935,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "food_beverage"
+      ]
+    },
+    {
+      "operational_name": "Famille Pouille",
+      "website": "pouille.eu",
+      "country": "fr",
+      "final_score": 0.6292,
+      "score_breakdown": {
+        "embedding": 0.5094,
+        "naics": 1.0,
+        "keyword": 0.4
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "food_beverage"
+      ]
+    },
+    {
+      "operational_name": "Club-Mate",
+      "website": "club-mate.fr",
+      "country": "fr",
+      "final_score": 0.6236,
+      "score_breakdown": {
+        "embedding": 0.2748,
+        "naics": 1.0,
+        "keyword": 0.8
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "food_beverage"
+      ]
+    },
+    {
+      "operational_name": "Kermen\u00e9",
+      "website": "kermene.fr",
+      "country": "fr",
+      "final_score": 0.6171,
+      "score_breakdown": {
+        "embedding": 0.3714,
+        "naics": 1.0,
+        "keyword": 0.6
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "food_beverage"
+      ]
+    },
+    {
+      "operational_name": "La Limonaderie de Paris",
+      "website": "lalimonaderiedeparis.com",
+      "country": "fr",
+      "final_score": 0.5998,
+      "score_breakdown": {
+        "embedding": 0.2218,
+        "naics": 1.0,
+        "keyword": 0.8
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "food_beverage"
+      ]
+    }
+  ]
+}

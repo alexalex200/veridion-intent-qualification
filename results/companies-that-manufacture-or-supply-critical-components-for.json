@@ -1,0 +1,260 @@
+{
+  "query": "Companies that manufacture or supply critical components for electric vehicle battery production",
+  "results": [
+    {
+      "operational_name": "E-Lyte",
+      "website": "e-lyte.de",
+      "country": "de",
+      "final_score": 0.5816,
+      "score_breakdown": {
+        "embedding": 0.1496,
+        "naics": 1.0,
+        "keyword": 0.8571
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "ev_battery_supply_chain"
+      ]
+    },
+    {
+      "operational_name": "Shan Shan Technology",
+      "website": "shanshantech.com",
+      "country": "cn",
+      "final_score": 0.5685,
+      "score_breakdown": {
+        "embedding": 0.2791,
+        "naics": 1.0,
+        "keyword": 0.5714
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "ev_battery_supply_chain"
+      ]
+    },
+    {
+      "operational_name": "Fengyang Pengen",
+      "website": "pennenergy.cn",
+      "country": "cn",
+      "final_score": 0.4209,
+      "score_breakdown": {
+        "embedding": 0.4062,
+        "naics": 0.0,
+        "keyword": 0.9524
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "ev_battery_supply_chain"
+      ]
+    },
+    {
+      "operational_name": "East Saint\u5148\u884c",
+      "website": "ayxxgbyy.com.cn",
+      "country": "cn",
+      "final_score": 0.4062,
+      "score_breakdown": {
+        "embedding": 0.3735,
+        "naics": 0.0,
+        "keyword": 0.9524
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "ev_battery_supply_chain"
+      ]
+    },
+    {
+      "operational_name": "CIDEcell",
+      "website": "cidecell.com",
+      "country": "es",
+      "final_score": 0.401,
+      "score_breakdown": {
+        "embedding": 0.3356,
+        "naics": 0.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "ev_battery_supply_chain"
+      ]
+    },
+    {
+      "operational_name": "Altmin",
+      "website": "altmin.in",
+      "country": "in",
+      "final_score": 0.397,
+      "score_breakdown": {
+        "embedding": 0.3532,
+        "naics": 0.0,
+        "keyword": 0.9524
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "ev_battery_supply_chain"
+      ]
+    },
+    {
+      "operational_name": "Stratus Materials",
+      "website": "stratusmaterials.com",
+      "country": "us",
+      "final_score": 0.391,
+      "score_breakdown": {
+        "embedding": 0.3397,
+        "naics": 0.0,
+        "keyword": 0.9524
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "ev_battery_supply_chain"
+      ]
+    },
+    {
+      "operational_name": "Dongdao New Energy",
+      "website": "dongdaochina.cn",
+      "country": "cn",
+      "final_score": 0.3885,
+      "score_breakdown": {
+        "embedding": 0.3342,
+        "naics": 0.0,
+        "keyword": 0.9524
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "ev_battery_supply_chain"
+      ]
+    },
+    {
+      "operational_name": "Charge CCCV",
+      "website": "chargecccv.com",
+      "country": "us",
+      "final_score": 0.3841,
+      "score_breakdown": {
+        "embedding": 0.3244,
+        "naics": 0.0,
+        "keyword": 0.9524
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "ev_battery_supply_chain"
+      ]
+    },
+    {
+      "operational_name": "Greenbatt Technology",
+      "website": "greenbatt.ch",
+      "country": "ch",
+      "final_score": 0.3814,
+      "score_breakdown": {
+        "embedding": 0.3713,
+        "naics": 0.0,
+        "keyword": 0.8571
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "ev_battery_supply_chain"
+      ]
+    },
+    {
+      "operational_name": "RJETech",
+      "website": null,
+      "country": "cn",
+      "final_score": 0.3802,
+      "score_breakdown": {
+        "embedding": 0.3158,
+        "naics": 0.0,
+        "keyword": 0.9524
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "ev_battery_supply_chain"
+      ]
+    },
+    {
+      "operational_name": "SolidEdge Solution",
+      "website": "solidedgesolution.com",
+      "country": "tw",
+      "final_score": 0.3793,
+      "score_breakdown": {
+        "embedding": 0.3138,
+        "naics": 0.0,
+        "keyword": 0.9524
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "ev_battery_supply_chain"
+      ]
+    },
+    {
+      "operational_name": "RJETech",
+      "website": "rjetech.com",
+      "country": "cn",
+      "final_score": 0.3791,
+      "score_breakdown": {
+        "embedding": 0.3663,
+        "naics": 0.0,
+        "keyword": 0.8571
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "ev_battery_supply_chain"
+      ]
+    },
+    {
+      "operational_name": "RUSTOR",
+      "website": "russianstorage.ru",
+      "country": "ru",
+      "final_score": 0.3774,
+      "score_breakdown": {
+        "embedding": 0.4153,
+        "naics": 0.0,
+        "keyword": 0.7619
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "ev_battery_supply_chain"
+      ]
+    },
+    {
+      "operational_name": "Anda Technology",
+      "website": "ad-lib.cn",
+      "country": "cn",
+      "final_score": 0.37,
+      "score_breakdown": {
+        "embedding": 0.399,
+        "naics": 0.0,
+        "keyword": 0.7619
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "ev_battery_supply_chain"
+      ]
+    }
+  ]
+}

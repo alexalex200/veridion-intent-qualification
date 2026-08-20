@@ -1,0 +1,275 @@
+{
+  "query": "Renewable energy equipment manufacturers in Scandinavia",
+  "results": [
+    {
+      "operational_name": "Ventum Dynamics",
+      "website": "ventumdynamics.com",
+      "country": "no",
+      "final_score": 0.6365,
+      "score_breakdown": {
+        "embedding": 0.3968,
+        "naics": 1.0,
+        "keyword": 0.6316
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy",
+        "renewable_equipment"
+      ]
+    },
+    {
+      "operational_name": "ENERCON",
+      "website": null,
+      "country": "se",
+      "final_score": 0.6175,
+      "score_breakdown": {
+        "embedding": 0.3546,
+        "naics": 1.0,
+        "keyword": 0.6316
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy",
+        "renewable_equipment"
+      ]
+    },
+    {
+      "operational_name": "R\u00f6gle Vindkraftpark",
+      "website": null,
+      "country": "se",
+      "final_score": 0.6001,
+      "score_breakdown": {
+        "embedding": 0.3159,
+        "naics": 1.0,
+        "keyword": 0.6316
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy",
+        "renewable_equipment"
+      ]
+    },
+    {
+      "operational_name": "Norhybrid Renewables",
+      "website": "norhybrid.com",
+      "country": "no",
+      "final_score": 0.5919,
+      "score_breakdown": {
+        "embedding": 0.2977,
+        "naics": 1.0,
+        "keyword": 0.6316
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy",
+        "renewable_equipment"
+      ]
+    },
+    {
+      "operational_name": "MantaWind",
+      "website": null,
+      "country": "se",
+      "final_score": 0.5717,
+      "score_breakdown": {
+        "embedding": 0.2528,
+        "naics": 1.0,
+        "keyword": 0.6316
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy",
+        "renewable_equipment"
+      ]
+    },
+    {
+      "operational_name": "windainergy",
+      "website": "windainergy.com",
+      "country": "se",
+      "final_score": 0.5713,
+      "score_breakdown": {
+        "embedding": 0.3105,
+        "naics": 1.0,
+        "keyword": 0.5263
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy",
+        "renewable_equipment"
+      ]
+    },
+    {
+      "operational_name": "Vestas",
+      "website": "vestas.com",
+      "country": "dk",
+      "final_score": 0.5707,
+      "score_breakdown": {
+        "embedding": 0.2507,
+        "naics": 1.0,
+        "keyword": 0.6316
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy",
+        "renewable_equipment"
+      ]
+    },
+    {
+      "operational_name": "Logic-Energy",
+      "website": "teunhulst.nl",
+      "country": "dk",
+      "final_score": 0.5669,
+      "score_breakdown": {
+        "embedding": 0.3007,
+        "naics": 1.0,
+        "keyword": 0.5263
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy",
+        "renewable_equipment"
+      ]
+    },
+    {
+      "operational_name": "Sol Industries",
+      "website": "sol-ind.com",
+      "country": "no",
+      "final_score": 0.5542,
+      "score_breakdown": {
+        "embedding": 0.2725,
+        "naics": 1.0,
+        "keyword": 0.5263
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy",
+        "renewable_equipment"
+      ]
+    },
+    {
+      "operational_name": "Climatico",
+      "website": "climatico.dk",
+      "country": "dk",
+      "final_score": 0.5527,
+      "score_breakdown": {
+        "embedding": 0.2106,
+        "naics": 1.0,
+        "keyword": 0.6316
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy",
+        "renewable_equipment"
+      ]
+    },
+    {
+      "operational_name": "Norwin Energy",
+      "website": "norwinenergy.com",
+      "country": "dk",
+      "final_score": 0.5519,
+      "score_breakdown": {
+        "embedding": 0.3258,
+        "naics": 1.0,
+        "keyword": 0.4211
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy",
+        "renewable_equipment"
+      ]
+    },
+    {
+      "operational_name": "Verta",
+      "website": null,
+      "country": "no",
+      "final_score": 0.5463,
+      "score_breakdown": {
+        "embedding": 0.2549,
+        "naics": 1.0,
+        "keyword": 0.5263
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy",
+        "renewable_equipment"
+      ]
+    },
+    {
+      "operational_name": "Thybor\u00f8n Sydhavn 2 | Vestas-m\u00f8lle",
+      "website": "thybsydhavnmolle-2.dk",
+      "country": "dk",
+      "final_score": 0.5444,
+      "score_breakdown": {
+        "embedding": 0.2508,
+        "naics": 1.0,
+        "keyword": 0.5263
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy",
+        "renewable_equipment"
+      ]
+    },
+    {
+      "operational_name": "Kraftkar Energi",
+      "website": "kraftkarenergi.no",
+      "country": "no",
+      "final_score": 0.5404,
+      "score_breakdown": {
+        "embedding": 0.3002,
+        "naics": 1.0,
+        "keyword": 0.4211
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy",
+        "renewable_equipment"
+      ]
+    },
+    {
+      "operational_name": "Envision Energy Denmark",
+      "website": null,
+      "country": "dk",
+      "final_score": 0.5342,
+      "score_breakdown": {
+        "embedding": 0.2864,
+        "naics": 1.0,
+        "keyword": 0.4211
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy",
+        "renewable_equipment"
+      ]
+    }
+  ]
+}

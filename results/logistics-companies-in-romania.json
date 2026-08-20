@@ -1,0 +1,260 @@
+{
+  "query": "Logistics companies in Romania",
+  "results": [
+    {
+      "operational_name": "Brasov Industrial Portfolio",
+      "website": "brasov-industrialportfolio.ro",
+      "country": "ro",
+      "final_score": 0.5145,
+      "score_breakdown": {
+        "embedding": 0.1063,
+        "naics": 1.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "logistics"
+      ]
+    },
+    {
+      "operational_name": "Compania Na\u021bional\u0103 de C\u0103i Ferate CFR",
+      "website": "cfr.ro",
+      "country": "ro",
+      "final_score": 0.4849,
+      "score_breakdown": {
+        "embedding": 0.0405,
+        "naics": 1.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "logistics"
+      ]
+    },
+    {
+      "operational_name": "Portul Constanta",
+      "website": "portofconstantza.com",
+      "country": "ro",
+      "final_score": 0.4308,
+      "score_breakdown": {
+        "embedding": 0.013,
+        "naics": 1.0,
+        "keyword": 0.5
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "logistics"
+      ]
+    },
+    {
+      "operational_name": "Valtec",
+      "website": "valtec.nl",
+      "country": "ro",
+      "final_score": 0.2234,
+      "score_breakdown": {
+        "embedding": 0.0334,
+        "naics": 0.0,
+        "keyword": 0.8333
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "logistics"
+      ]
+    },
+    {
+      "operational_name": "METRO Rom\u00e2nia",
+      "website": "metro.ro",
+      "country": "ro",
+      "final_score": 0.2186,
+      "score_breakdown": {
+        "embedding": 0.1154,
+        "naics": 0.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "logistics"
+      ]
+    },
+    {
+      "operational_name": "Po\u0219ta Rom\u00e2n\u0103",
+      "website": "posta-romana.ro",
+      "country": "ro",
+      "final_score": 0.196,
+      "score_breakdown": {
+        "embedding": 0.0651,
+        "naics": 0.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "logistics"
+      ]
+    },
+    {
+      "operational_name": "Rompetrol",
+      "website": "rompetrol.com",
+      "country": "ro",
+      "final_score": 0.1889,
+      "score_breakdown": {
+        "embedding": 0.0494,
+        "naics": 0.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "logistics"
+      ]
+    },
+    {
+      "operational_name": "STILL",
+      "website": "still.ro",
+      "country": "ro",
+      "final_score": 0.1854,
+      "score_breakdown": {
+        "embedding": 0.0417,
+        "naics": 0.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "logistics"
+      ]
+    },
+    {
+      "operational_name": "OMV",
+      "website": "omv.ro",
+      "country": "ro",
+      "final_score": 0.1798,
+      "score_breakdown": {
+        "embedding": 0.0291,
+        "naics": 0.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "logistics"
+      ]
+    },
+    {
+      "operational_name": "OSCAR",
+      "website": "oscars.ro",
+      "country": "ro",
+      "final_score": 0.1788,
+      "score_breakdown": {
+        "embedding": 0.027,
+        "naics": 0.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "logistics"
+      ]
+    },
+    {
+      "operational_name": "Transgaz",
+      "website": "transgaz.ro",
+      "country": "ro",
+      "final_score": 0.1755,
+      "score_breakdown": {
+        "embedding": 0.0196,
+        "naics": 0.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "logistics"
+      ]
+    },
+    {
+      "operational_name": "Romgaz",
+      "website": "romgaz.ro",
+      "country": "ro",
+      "final_score": 0.1603,
+      "score_breakdown": {
+        "embedding": 0.0784,
+        "naics": 0.0,
+        "keyword": 0.5
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "logistics"
+      ]
+    },
+    {
+      "operational_name": "Rompetrol",
+      "website": "rompetrol.ro",
+      "country": "ro",
+      "final_score": 0.1428,
+      "score_breakdown": {
+        "embedding": 0.0396,
+        "naics": 0.0,
+        "keyword": 0.5
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "logistics"
+      ]
+    },
+    {
+      "operational_name": "Fildas Trading",
+      "website": "fildas.ro",
+      "country": "ro",
+      "final_score": 0.1382,
+      "score_breakdown": {
+        "embedding": 0.0293,
+        "naics": 0.0,
+        "keyword": 0.5
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "logistics"
+      ]
+    },
+    {
+      "operational_name": "AQUA CENTER",
+      "website": "aquacenter.ro",
+      "country": "ro",
+      "final_score": 0.1337,
+      "score_breakdown": {
+        "embedding": 0.0193,
+        "naics": 0.0,
+        "keyword": 0.5
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "logistics"
+      ]
+    }
+  ]
+}

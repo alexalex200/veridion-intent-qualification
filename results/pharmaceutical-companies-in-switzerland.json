@@ -1,0 +1,260 @@
+{
+  "query": "Pharmaceutical companies in Switzerland",
+  "results": [
+    {
+      "operational_name": "Sumitomo Pharma Switzerland",
+      "website": "sumitomo-pharma.com",
+      "country": "ch",
+      "final_score": 0.7281,
+      "score_breakdown": {
+        "embedding": 0.3958,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "pharma"
+      ]
+    },
+    {
+      "operational_name": "CordenPharma",
+      "website": "cordenpharma.com",
+      "country": "ch",
+      "final_score": 0.6408,
+      "score_breakdown": {
+        "embedding": 0.2018,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "pharma"
+      ]
+    },
+    {
+      "operational_name": "Idorsia",
+      "website": "idorsia.com",
+      "country": "ch",
+      "final_score": 0.6353,
+      "score_breakdown": {
+        "embedding": 0.1895,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "pharma"
+      ]
+    },
+    {
+      "operational_name": "Debiopharm",
+      "website": "debiopharm.com",
+      "country": "ch",
+      "final_score": 0.6337,
+      "score_breakdown": {
+        "embedding": 0.1859,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "pharma"
+      ]
+    },
+    {
+      "operational_name": "Acino",
+      "website": "acino.swiss",
+      "country": "ch",
+      "final_score": 0.6209,
+      "score_breakdown": {
+        "embedding": 0.2964,
+        "naics": 1.0,
+        "keyword": 0.75
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "pharma"
+      ]
+    },
+    {
+      "operational_name": "Novartis",
+      "website": "novartis.com",
+      "country": "ch",
+      "final_score": 0.6151,
+      "score_breakdown": {
+        "embedding": 0.1448,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "pharma"
+      ]
+    },
+    {
+      "operational_name": "Ferring",
+      "website": "ferring.com",
+      "country": "ch",
+      "final_score": 0.6122,
+      "score_breakdown": {
+        "embedding": 0.1383,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "pharma"
+      ]
+    },
+    {
+      "operational_name": "ADC Therapeutics",
+      "website": "adctherapeutics.com",
+      "country": "ch",
+      "final_score": 0.6105,
+      "score_breakdown": {
+        "embedding": 0.1344,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "pharma"
+      ]
+    },
+    {
+      "operational_name": "Helsinn",
+      "website": "helsinn.com",
+      "country": "ch",
+      "final_score": 0.6068,
+      "score_breakdown": {
+        "embedding": 0.2651,
+        "naics": 1.0,
+        "keyword": 0.75
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "pharma"
+      ]
+    },
+    {
+      "operational_name": "PolyPeptide",
+      "website": "polypeptide.com",
+      "country": "ch",
+      "final_score": 0.6066,
+      "score_breakdown": {
+        "embedding": 0.1257,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "pharma"
+      ]
+    },
+    {
+      "operational_name": "CARBOGEN AMCIS",
+      "website": "carbogen-amcis.com",
+      "country": "ch",
+      "final_score": 0.6035,
+      "score_breakdown": {
+        "embedding": 0.2578,
+        "naics": 1.0,
+        "keyword": 0.75
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "pharma"
+      ]
+    },
+    {
+      "operational_name": "Bachem",
+      "website": "bachem.com",
+      "country": "ch",
+      "final_score": 0.5975,
+      "score_breakdown": {
+        "embedding": 0.1055,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "pharma"
+      ]
+    },
+    {
+      "operational_name": "Celonic",
+      "website": "celonic.com",
+      "country": "ch",
+      "final_score": 0.5929,
+      "score_breakdown": {
+        "embedding": 0.0954,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "pharma"
+      ]
+    },
+    {
+      "operational_name": "Drugs for Neglected Diseases initiative",
+      "website": "dndi.org",
+      "country": "ch",
+      "final_score": 0.5806,
+      "score_breakdown": {
+        "embedding": 0.0679,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "pharma"
+      ]
+    },
+    {
+      "operational_name": "CRISPR Therapeutics",
+      "website": "crisprtx.com",
+      "country": "ch",
+      "final_score": 0.568,
+      "score_breakdown": {
+        "embedding": 0.0399,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "pharma"
+      ]
+    }
+  ]
+}

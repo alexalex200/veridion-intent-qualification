@@ -1,0 +1,260 @@
+{
+  "query": "Construction companies in the United States with revenue over $50 million",
+  "results": [
+    {
+      "operational_name": "DPR Construction",
+      "website": "dpr.com",
+      "country": "us",
+      "final_score": 0.68,
+      "score_breakdown": {
+        "embedding": 0.289,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "construction"
+      ]
+    },
+    {
+      "operational_name": "Skanska",
+      "website": "skanska.com",
+      "country": "us",
+      "final_score": 0.6787,
+      "score_breakdown": {
+        "embedding": 0.286,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "construction"
+      ]
+    },
+    {
+      "operational_name": "Kiewit",
+      "website": "kiewit.com",
+      "country": "us",
+      "final_score": 0.6691,
+      "score_breakdown": {
+        "embedding": 0.2647,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "construction"
+      ]
+    },
+    {
+      "operational_name": "Focus Civil Construction Group",
+      "website": "focuscivil.com",
+      "country": "us",
+      "final_score": 0.6195,
+      "score_breakdown": {
+        "embedding": 0.2161,
+        "naics": 1.0,
+        "keyword": 0.8889
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "construction"
+      ]
+    },
+    {
+      "operational_name": "Halmar International",
+      "website": "halmarinternational.com",
+      "country": "us",
+      "final_score": 0.6152,
+      "score_breakdown": {
+        "embedding": 0.2065,
+        "naics": 1.0,
+        "keyword": 0.8889
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "construction"
+      ]
+    },
+    {
+      "operational_name": "EMCOR Group",
+      "website": "emcorgroup.com",
+      "country": "us",
+      "final_score": 0.6012,
+      "score_breakdown": {
+        "embedding": 0.1139,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "construction"
+      ]
+    },
+    {
+      "operational_name": "Bechtel",
+      "website": "bechtel.com",
+      "country": "us",
+      "final_score": 0.597,
+      "score_breakdown": {
+        "embedding": 0.1662,
+        "naics": 1.0,
+        "keyword": 0.8889
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "construction"
+      ]
+    },
+    {
+      "operational_name": "Quanta Services",
+      "website": "quantaservices.com",
+      "country": "us",
+      "final_score": 0.5918,
+      "score_breakdown": {
+        "embedding": 0.1547,
+        "naics": 1.0,
+        "keyword": 0.8889
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "construction"
+      ]
+    },
+    {
+      "operational_name": "Fluor",
+      "website": "fluor.com",
+      "country": "us",
+      "final_score": 0.5735,
+      "score_breakdown": {
+        "embedding": 0.2373,
+        "naics": 1.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "construction"
+      ]
+    },
+    {
+      "operational_name": "PulteGroup",
+      "website": "pultegroup.com",
+      "country": "us",
+      "final_score": 0.5708,
+      "score_breakdown": {
+        "embedding": 0.0463,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "construction"
+      ]
+    },
+    {
+      "operational_name": "BNBuilders",
+      "website": "bnbuilders.com",
+      "country": "us",
+      "final_score": 0.5695,
+      "score_breakdown": {
+        "embedding": 0.2285,
+        "naics": 1.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "construction"
+      ]
+    },
+    {
+      "operational_name": "Tutor Perini",
+      "website": "tutorperini.com",
+      "country": "us",
+      "final_score": 0.5618,
+      "score_breakdown": {
+        "embedding": 0.2114,
+        "naics": 1.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "construction"
+      ]
+    },
+    {
+      "operational_name": "Brock Group",
+      "website": "brockgroup.com",
+      "country": "us",
+      "final_score": 0.542,
+      "score_breakdown": {
+        "embedding": 0.044,
+        "naics": 1.0,
+        "keyword": 0.8889
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "construction"
+      ]
+    },
+    {
+      "operational_name": "Colaska",
+      "website": "colaska.com",
+      "country": "us",
+      "final_score": 0.5375,
+      "score_breakdown": {
+        "embedding": 0.1575,
+        "naics": 1.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "construction"
+      ]
+    },
+    {
+      "operational_name": "Clayton Homes",
+      "website": "claytonhomes.com",
+      "country": "us",
+      "final_score": 0.5164,
+      "score_breakdown": {
+        "embedding": 0.1105,
+        "naics": 1.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "construction"
+      ]
+    }
+  ]
+}

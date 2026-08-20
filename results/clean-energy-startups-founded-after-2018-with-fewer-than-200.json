@@ -1,0 +1,275 @@
+{
+  "query": "Clean energy startups founded after 2018 with fewer than 200 employees",
+  "results": [
+    {
+      "operational_name": "WBS Mobility",
+      "website": "e-way24.pl",
+      "country": "pl",
+      "final_score": 0.4837,
+      "score_breakdown": {
+        "embedding": 0.0379,
+        "naics": 1.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy"
+      ]
+    },
+    {
+      "operational_name": "Volta Capital",
+      "website": "voltacapital.it",
+      "country": "it",
+      "final_score": 0.4764,
+      "score_breakdown": {
+        "embedding": 0.2069,
+        "naics": 1.0,
+        "keyword": 0.3333
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy"
+      ]
+    },
+    {
+      "operational_name": "Utilify",
+      "website": "utilifyapp.com",
+      "country": "us",
+      "final_score": 0.4373,
+      "score_breakdown": {
+        "embedding": 0.12,
+        "naics": 1.0,
+        "keyword": 0.3333
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy"
+      ]
+    },
+    {
+      "operational_name": "Kraftkar Energi",
+      "website": "kraftkarenergi.no",
+      "country": "no",
+      "final_score": 0.4339,
+      "score_breakdown": {
+        "embedding": 0.1976,
+        "naics": 1.0,
+        "keyword": 0.5
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [
+        "employee_count unknown",
+        "year_founded unknown"
+      ],
+      "matched_concepts": [
+        "clean_energy"
+      ]
+    },
+    {
+      "operational_name": "Carita och Torbj\u00f6rn",
+      "website": "cktl.se",
+      "country": "se",
+      "final_score": 0.4185,
+      "score_breakdown": {
+        "embedding": 0.1632,
+        "naics": 1.0,
+        "keyword": 0.5
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [
+        "employee_count unknown",
+        "year_founded unknown"
+      ],
+      "matched_concepts": [
+        "clean_energy"
+      ]
+    },
+    {
+      "operational_name": "Galileo Empower Finland",
+      "website": "galileoempower.fi",
+      "country": "fi",
+      "final_score": 0.4008,
+      "score_breakdown": {
+        "embedding": 0.124,
+        "naics": 1.0,
+        "keyword": 0.5
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [
+        "employee_count unknown",
+        "year_founded unknown"
+      ],
+      "matched_concepts": [
+        "clean_energy"
+      ]
+    },
+    {
+      "operational_name": "Enviroway Advisory",
+      "website": "envirowayadvisory.com",
+      "country": "ar",
+      "final_score": 0.3952,
+      "score_breakdown": {
+        "embedding": 0.0264,
+        "naics": 1.0,
+        "keyword": 0.3333
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy"
+      ]
+    },
+    {
+      "operational_name": "Nakama",
+      "website": "nakama-agro.es",
+      "country": "es",
+      "final_score": 0.3939,
+      "score_breakdown": {
+        "embedding": 0.0234,
+        "naics": 1.0,
+        "keyword": 0.3333
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy"
+      ]
+    },
+    {
+      "operational_name": "Norhybrid Renewables",
+      "website": "norhybrid.com",
+      "country": "no",
+      "final_score": 0.3865,
+      "score_breakdown": {
+        "embedding": 0.3033,
+        "naics": 0.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy"
+      ]
+    },
+    {
+      "operational_name": "VASOL TECH",
+      "website": "vasol.se",
+      "country": "se",
+      "final_score": 0.3507,
+      "score_breakdown": {
+        "embedding": 0.4052,
+        "naics": 0.0,
+        "keyword": 0.8333
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [
+        "year_founded unknown"
+      ],
+      "matched_concepts": [
+        "clean_energy"
+      ]
+    },
+    {
+      "operational_name": "SideWind",
+      "website": "sidewind.is",
+      "country": "is",
+      "final_score": 0.3435,
+      "score_breakdown": {
+        "embedding": 0.2077,
+        "naics": 0.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy"
+      ]
+    },
+    {
+      "operational_name": "Magnora",
+      "website": "magnoraasa.com",
+      "country": "no",
+      "final_score": 0.3243,
+      "score_breakdown": {
+        "embedding": 0.2576,
+        "naics": 0.0,
+        "keyword": 0.8333
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy"
+      ]
+    },
+    {
+      "operational_name": "MantaWind",
+      "website": null,
+      "country": "se",
+      "final_score": 0.3153,
+      "score_breakdown": {
+        "embedding": 0.2339,
+        "naics": 0.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [
+        "employee_count unknown"
+      ],
+      "matched_concepts": [
+        "clean_energy"
+      ]
+    },
+    {
+      "operational_name": "Verta",
+      "website": null,
+      "country": "no",
+      "final_score": 0.3001,
+      "score_breakdown": {
+        "embedding": 0.2928,
+        "naics": 0.0,
+        "keyword": 0.8333
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [
+        "employee_count unknown"
+      ],
+      "matched_concepts": [
+        "clean_energy"
+      ]
+    },
+    {
+      "operational_name": "Sintea",
+      "website": "sintea.eu",
+      "country": "it",
+      "final_score": 0.3,
+      "score_breakdown": {
+        "embedding": 0.0,
+        "naics": 1.0,
+        "keyword": 0.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy"
+      ]
+    }
+  ]
+}

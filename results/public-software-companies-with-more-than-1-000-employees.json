@@ -1,0 +1,260 @@
+{
+  "query": "Public software companies with more than 1,000 employees",
+  "results": [
+    {
+      "operational_name": "Globant",
+      "website": "globant.com",
+      "country": "lu",
+      "final_score": 0.6173,
+      "score_breakdown": {
+        "embedding": 0.1496,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software"
+      ]
+    },
+    {
+      "operational_name": "Fujitsu",
+      "website": "fujitsu.com",
+      "country": "jp",
+      "final_score": 0.5842,
+      "score_breakdown": {
+        "embedding": 0.0761,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software"
+      ]
+    },
+    {
+      "operational_name": "EPAM",
+      "website": "epam.com",
+      "country": "us",
+      "final_score": 0.5805,
+      "score_breakdown": {
+        "embedding": 0.0678,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software"
+      ]
+    },
+    {
+      "operational_name": "Capgemini",
+      "website": "capgemini.com",
+      "country": "ca",
+      "final_score": 0.5777,
+      "score_breakdown": {
+        "embedding": 0.0615,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software"
+      ]
+    },
+    {
+      "operational_name": "SAIC",
+      "website": "saic.com",
+      "country": "us",
+      "final_score": 0.5721,
+      "score_breakdown": {
+        "embedding": 0.0492,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software"
+      ]
+    },
+    {
+      "operational_name": "Atos",
+      "website": "atos.net",
+      "country": "fr",
+      "final_score": 0.5702,
+      "score_breakdown": {
+        "embedding": 0.045,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software"
+      ]
+    },
+    {
+      "operational_name": "Mphasis",
+      "website": "mphasis.com",
+      "country": "us",
+      "final_score": 0.5697,
+      "score_breakdown": {
+        "embedding": 0.0438,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software"
+      ]
+    },
+    {
+      "operational_name": "DWS Group",
+      "website": "hcltech.com",
+      "country": "au",
+      "final_score": 0.567,
+      "score_breakdown": {
+        "embedding": 0.0379,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software"
+      ]
+    },
+    {
+      "operational_name": "Genpact",
+      "website": "genpact.com",
+      "country": "us",
+      "final_score": 0.566,
+      "score_breakdown": {
+        "embedding": 0.0356,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software"
+      ]
+    },
+    {
+      "operational_name": "CGI",
+      "website": "cgi.com",
+      "country": "ca",
+      "final_score": 0.5652,
+      "score_breakdown": {
+        "embedding": 0.0337,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software"
+      ]
+    },
+    {
+      "operational_name": "NTT DATA",
+      "website": "nttdata.com",
+      "country": "jp",
+      "final_score": 0.5633,
+      "score_breakdown": {
+        "embedding": 0.0295,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software"
+      ]
+    },
+    {
+      "operational_name": "Tata Consultancy Services",
+      "website": "tcs.com",
+      "country": "in",
+      "final_score": 0.5198,
+      "score_breakdown": {
+        "embedding": 0.118,
+        "naics": 1.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software"
+      ]
+    },
+    {
+      "operational_name": "Wipro",
+      "website": "wipro.com",
+      "country": "in",
+      "final_score": 0.497,
+      "score_breakdown": {
+        "embedding": 0.0675,
+        "naics": 1.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software"
+      ]
+    },
+    {
+      "operational_name": "Leidos",
+      "website": "leidos.com",
+      "country": "us",
+      "final_score": 0.4954,
+      "score_breakdown": {
+        "embedding": 0.0639,
+        "naics": 1.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software"
+      ]
+    },
+    {
+      "operational_name": "Booz Allen",
+      "website": "boozallen.com",
+      "country": "us",
+      "final_score": 0.492,
+      "score_breakdown": {
+        "embedding": 0.0564,
+        "naics": 1.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software"
+      ]
+    }
+  ]
+}

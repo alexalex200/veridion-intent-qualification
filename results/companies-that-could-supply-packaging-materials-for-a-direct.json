@@ -1,0 +1,260 @@
+{
+  "query": "Companies that could supply packaging materials for a direct-to-consumer cosmetics brand",
+  "results": [
+    {
+      "operational_name": "Sunshine Packaging",
+      "website": "hzshengsha.com",
+      "country": "cn",
+      "final_score": 0.7152,
+      "score_breakdown": {
+        "embedding": 0.4464,
+        "naics": 1.0,
+        "keyword": 0.8571
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ]
+    },
+    {
+      "operational_name": "BAOLILONG GLASS PACKAGING",
+      "website": "baolilongglasspackaging.com",
+      "country": "cn",
+      "final_score": 0.6639,
+      "score_breakdown": {
+        "embedding": 0.3854,
+        "naics": 1.0,
+        "keyword": 0.7619
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ]
+    },
+    {
+      "operational_name": "Yijie Packaging",
+      "website": "yijiepackaging.en.alibaba.com",
+      "country": "cn",
+      "final_score": 0.6526,
+      "score_breakdown": {
+        "embedding": 0.4661,
+        "naics": 1.0,
+        "keyword": 0.5714
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ]
+    },
+    {
+      "operational_name": "Lesopack Cos Packaging",
+      "website": "cospackaging.com.au",
+      "country": "au",
+      "final_score": 0.65,
+      "score_breakdown": {
+        "embedding": 0.4602,
+        "naics": 1.0,
+        "keyword": 0.5714
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ]
+    },
+    {
+      "operational_name": "Minh Trang Packaging",
+      "website": "xuongchailominhtrang.com",
+      "country": "vn",
+      "final_score": 0.6443,
+      "score_breakdown": {
+        "embedding": 0.3947,
+        "naics": 1.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ]
+    },
+    {
+      "operational_name": "Shenzhen Itop Cosmetic Packaging",
+      "website": "itoppacking.com",
+      "country": "cn",
+      "final_score": 0.6276,
+      "score_breakdown": {
+        "embedding": 0.4106,
+        "naics": 1.0,
+        "keyword": 0.5714
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ]
+    },
+    {
+      "operational_name": "Wenjing Packaging",
+      "website": "wenjingpack.com",
+      "country": "cn",
+      "final_score": 0.6211,
+      "score_breakdown": {
+        "embedding": 0.3961,
+        "naics": 1.0,
+        "keyword": 0.5714
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ]
+    },
+    {
+      "operational_name": "Aurelo Packaging Co",
+      "website": "aurelopackaging.com.au",
+      "country": "au",
+      "final_score": 0.5876,
+      "score_breakdown": {
+        "embedding": 0.3217,
+        "naics": 1.0,
+        "keyword": 0.5714
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ]
+    },
+    {
+      "operational_name": "Shanghai Bochen Cosmetic Packaging",
+      "website": "cncosmeticbottles.com",
+      "country": "cn",
+      "final_score": 0.5851,
+      "score_breakdown": {
+        "embedding": 0.3161,
+        "naics": 1.0,
+        "keyword": 0.5714
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ]
+    },
+    {
+      "operational_name": "YONWOO",
+      "website": "yonwookorea.com",
+      "country": "kr",
+      "final_score": 0.5807,
+      "score_breakdown": {
+        "embedding": 0.3063,
+        "naics": 1.0,
+        "keyword": 0.5714
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ]
+    },
+    {
+      "operational_name": "Flextribe",
+      "website": "flextribe.co",
+      "country": "us",
+      "final_score": 0.5739,
+      "score_breakdown": {
+        "embedding": 0.3441,
+        "naics": 1.0,
+        "keyword": 0.4762
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ]
+    },
+    {
+      "operational_name": "Standard Mold",
+      "website": "standardmold.co.kr",
+      "country": "kr",
+      "final_score": 0.3323,
+      "score_breakdown": {
+        "embedding": 0.3681,
+        "naics": 0.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ]
+    },
+    {
+      "operational_name": "SHEACK Packaging",
+      "website": "sheackpkg.com",
+      "country": "cn",
+      "final_score": 0.3205,
+      "score_breakdown": {
+        "embedding": 0.3947,
+        "naics": 0.0,
+        "keyword": 0.5714
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ]
+    },
+    {
+      "operational_name": "SZ SJ Packaging",
+      "website": "szsjpackaging.com",
+      "country": "cn",
+      "final_score": 0.3068,
+      "score_breakdown": {
+        "embedding": 0.4172,
+        "naics": 0.0,
+        "keyword": 0.4762
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ]
+    },
+    {
+      "operational_name": "Crystal International",
+      "website": "crystalintl.com",
+      "country": "ca",
+      "final_score": 0.2861,
+      "score_breakdown": {
+        "embedding": 0.4241,
+        "naics": 0.0,
+        "keyword": 0.381
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ]
+    }
+  ]
+}

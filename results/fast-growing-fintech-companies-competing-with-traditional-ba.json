@@ -1,0 +1,260 @@
+{
+  "query": "Fast-growing fintech companies competing with traditional banks in Europe",
+  "results": [
+    {
+      "operational_name": "European Pay",
+      "website": "european-pay.fr",
+      "country": "fr",
+      "final_score": 0.536,
+      "score_breakdown": {
+        "embedding": 0.0972,
+        "naics": 1.0,
+        "keyword": 0.7692
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ]
+    },
+    {
+      "operational_name": "Phin",
+      "website": "phintech.de",
+      "country": "de",
+      "final_score": 0.4744,
+      "score_breakdown": {
+        "embedding": 0.0457,
+        "naics": 1.0,
+        "keyword": 0.6154
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ]
+    },
+    {
+      "operational_name": "SkyHarvest",
+      "website": "skyharvest.eu",
+      "country": "at",
+      "final_score": 0.4362,
+      "score_breakdown": {
+        "embedding": 0.0463,
+        "naics": 1.0,
+        "keyword": 0.4615
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ]
+    },
+    {
+      "operational_name": "CTC FUND",
+      "website": "ctcfundlimited.com",
+      "country": "gb",
+      "final_score": 0.4241,
+      "score_breakdown": {
+        "embedding": 0.1049,
+        "naics": 1.0,
+        "keyword": 0.3077
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ]
+    },
+    {
+      "operational_name": "Agility FX",
+      "website": "agility-fx.co.uk",
+      "country": "gb",
+      "final_score": 0.4109,
+      "score_breakdown": {
+        "embedding": 0.0754,
+        "naics": 1.0,
+        "keyword": 0.3077
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ]
+    },
+    {
+      "operational_name": "Rantum Capital",
+      "website": "rantumcapital.de",
+      "country": "de",
+      "final_score": 0.4069,
+      "score_breakdown": {
+        "embedding": 0.0665,
+        "naics": 1.0,
+        "keyword": 0.3077
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ]
+    },
+    {
+      "operational_name": "Salauddin Global Trading",
+      "website": "salauddinglobal.co.uk",
+      "country": "gb",
+      "final_score": 0.3989,
+      "score_breakdown": {
+        "embedding": 0.0489,
+        "naics": 1.0,
+        "keyword": 0.3077
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ]
+    },
+    {
+      "operational_name": "Ariv Pay",
+      "website": "arivpay.com",
+      "country": "gb",
+      "final_score": 0.397,
+      "score_breakdown": {
+        "embedding": 0.0446,
+        "naics": 1.0,
+        "keyword": 0.3077
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ]
+    },
+    {
+      "operational_name": "Credito21",
+      "website": "credito21.es",
+      "country": "es",
+      "final_score": 0.3944,
+      "score_breakdown": {
+        "embedding": 0.0389,
+        "naics": 1.0,
+        "keyword": 0.3077
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ]
+    },
+    {
+      "operational_name": "Aircash",
+      "website": "aircash.eu",
+      "country": "hr",
+      "final_score": 0.3922,
+      "score_breakdown": {
+        "embedding": 0.0339,
+        "naics": 1.0,
+        "keyword": 0.3077
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ]
+    },
+    {
+      "operational_name": "FGC Money Transfer",
+      "website": "fgcexchange.co.uk",
+      "country": "gb",
+      "final_score": 0.3879,
+      "score_breakdown": {
+        "embedding": 0.0243,
+        "naics": 1.0,
+        "keyword": 0.3077
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ]
+    },
+    {
+      "operational_name": "Folio",
+      "website": "folio.no",
+      "country": "no",
+      "final_score": 0.3834,
+      "score_breakdown": {
+        "embedding": 0.0998,
+        "naics": 1.0,
+        "keyword": 0.1538
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ]
+    },
+    {
+      "operational_name": "ECrowd Invest",
+      "website": null,
+      "country": "es",
+      "final_score": 0.3786,
+      "score_breakdown": {
+        "embedding": 0.0892,
+        "naics": 1.0,
+        "keyword": 0.1538
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ]
+    },
+    {
+      "operational_name": "City Exchange",
+      "website": "sarafishahr.co.uk",
+      "country": "gb",
+      "final_score": 0.3636,
+      "score_breakdown": {
+        "embedding": 0.0559,
+        "naics": 1.0,
+        "keyword": 0.1538
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ]
+    },
+    {
+      "operational_name": "VIP Exchange",
+      "website": "vipexchange.uk",
+      "country": "gb",
+      "final_score": 0.3618,
+      "score_breakdown": {
+        "embedding": 0.0518,
+        "naics": 1.0,
+        "keyword": 0.1538
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ]
+    }
+  ]
+}
