@@ -38,13 +38,16 @@ def result_to_dict(company, scores, gate, parsed, llm_verdict):
     }
 
 
-def qualify(companies, vectorizer, matrix, query, top_k=25, min_score=0.12,
+def qualify(companies, blobs, vectorizer, matrix, query, top_k=25, min_score=0.12,
             use_llm=True, borderline_high=0.45, llm_model=OLLAMA_MODEL, llm_host=OLLAMA_HOST):
+    # blobs = text_blob(company) for each company, computed once by the
+    # caller instead of here, since this function gets called once per
+    # query and recomputing them every time was wasted work
     parsed = parse_query(query)
     embedding_scores = score_query(vectorizer, matrix, expanded_text(parsed))
 
     results = []
-    for company, emb_score, blob in zip(companies, embedding_scores, (text_blob(c) for c in companies)):
+    for company, emb_score, blob in zip(companies, embedding_scores, blobs):
         gate = check_gates(company, parsed)
         if not gate["passed"]:
             continue
@@ -56,7 +59,8 @@ def qualify(companies, vectorizer, matrix, query, top_k=25, min_score=0.12,
     results.sort(key=lambda r: r["scores"]["final"], reverse=True)
     candidate_window = max(top_k * 3, 30)
 
-    use_llm = use_llm and ollama_available(llm_host)
+    # use_llm is already resolved by the caller (checked once at startup,
+    # not re-pinged on every query)
     if use_llm:
         for r in results[:candidate_window]:
             scores = r["scores"]
@@ -89,12 +93,12 @@ def qualify(companies, vectorizer, matrix, query, top_k=25, min_score=0.12,
     ]
 
 
-def run_batch(companies, vectorizer, matrix, queries, output_dir, top_k, min_score, use_llm,
+def run_batch(companies, blobs, vectorizer, matrix, queries, output_dir, top_k, min_score, use_llm,
               borderline_high, llm_model, llm_host):
     out_dir = Path(output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     for query in queries:
-        results = qualify(companies, vectorizer, matrix, query, top_k, min_score,
+        results = qualify(companies, blobs, vectorizer, matrix, query, top_k, min_score,
                            use_llm, borderline_high, llm_model, llm_host)
         out_path = out_dir / f"{slugify(query)}.json"
         out_path.write_text(json.dumps({"query": query, "results": results}, indent=2), encoding="utf-8")
@@ -119,21 +123,29 @@ def main():
         parser.error("Provide --query or --queries-file")
 
     companies = load_companies(args.data)
-    vectorizer, matrix = build_index([text_blob(c) for c in companies])
+    if not companies:
+        print(f"No companies loaded from {args.data}, nothing to do", file=sys.stderr)
+        sys.exit(1)
+
+    blobs = [text_blob(c) for c in companies]
+    vectorizer, matrix = build_index(blobs)
+
+    # check ollama once here, not on every query
     use_llm = not args.no_llm
     if use_llm and not ollama_available(args.llm_host):
         print(f"Ollama not reachable at {args.llm_host}, continuing without llm verification", file=sys.stderr)
+        use_llm = False
 
     print(f"Loaded {len(companies)} companies from {args.data}", file=sys.stderr)
 
     if args.query:
-        results = qualify(companies, vectorizer, matrix, args.query, args.top_k, args.min_score,
+        results = qualify(companies, blobs, vectorizer, matrix, args.query, args.top_k, args.min_score,
                            use_llm, args.borderline_high, args.llm_model, args.llm_host)
         print(json.dumps({"query": args.query, "results": results}, indent=2))
         return
 
     queries = json.loads(Path(args.queries_file).read_text(encoding="utf-8"))
-    run_batch(companies, vectorizer, matrix, queries, args.output_dir, args.top_k, args.min_score,
+    run_batch(companies, blobs, vectorizer, matrix, queries, args.output_dir, args.top_k, args.min_score,
               use_llm, args.borderline_high, args.llm_model, args.llm_host)
 
 
