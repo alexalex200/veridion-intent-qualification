@@ -279,6 +279,52 @@ real output, not just internal scores:
   | *B2B SaaS companies providing HR solutions in Europe* (top 5) | Globant, ASCIA, HRWare Consulting, Sincron HR, Pandapé (IT consultancies mixed with real HR software) | Bizneo HR, Personio, Sincron HR, Pandapé, BambooHR - all `naics=1.0`, all genuine HR software vendors |
   | *Companies that manufacture or supply critical components for EV battery production* (top score) | 0.58 (`naics=0.0` for nearly every result - the concept was running on keyword/embedding alone) | 0.72 (`naics=1.0` for the top 15 - Fengyang Pengen, CIDEcell, Altmin, Stratus Materials: genuine battery-materials manufacturers) |
 
+**A second audit pass, prompted by manually inspecting mid-ranked results
+rather than just the top of each list, found three more issues of the
+same shape.** (1) The `335911`/`335910` typo from the EV-battery concept
+turned out to be copy-pasted into `clean_energy` too, silently blocking
+battery-storage companies there as well - same fix, same root cause,
+missed the first time because I fixed the concept the query obviously
+pointed at (EV battery) and didn't check whether the same mistake existed
+elsewhere. (2) Scanning results with `naics=0` that still scored
+reasonably well (the corroboration discount halves rather than zeroes
+keyword credit, so residual false-taxonomy matches don't vanish, they
+just rank lower - which makes them findable) surfaced `326199` ("All
+Other Plastics Product Manufacturing") as the dominant code for
+cosmetic-packaging specialists: `SZ SJ Packaging` (whose own description
+says "specialized in the production of cosmetic packaging, including
+custom lipstick tubes, eyeshadow palettes, skincare bottles") was scoring
+`naics=0` and ranking below companies with no more real relevance than it
+had, purely because a common code was missing from the taxonomy. Added as
+a *weak* prefix (0.5 credit, not 1.0), since it's a broad catch-all shared
+with unrelated plastics manufacturers - Crystal International's score
+went from 0.39 to 0.59 after the fix. (3) The same scan surfaced a genuine
+LLM failure the earlier fixes hadn't touched: `Algavo`, a marine-biomass
+/ bioeconomy company with no clean-energy business at all, was scoring
+`naics=0.5` (via the broad `541690` "Other Scientific and Technical
+Consulting Services" code, shared with actual renewable-energy
+consultancies) and got LLM-approved with the reasoning *"clean energy
+startups in the marine bioeconomy space"* - a category that doesn't
+exist, a non-sequitur the LLM stage was supposed to catch and didn't.
+Rather than trying to prompt-engineer around one specific bad case, the
+fix was upstream: `541690` was too broad to be useful signal for *any*
+concept (it's shared across unrelated consulting fields), so it was
+removed from `clean_energy`'s prefixes entirely instead of just
+downweighted. After the fix, `Algavo` no longer appears in the top 15 at
+all, and legitimate renewable-energy wind/turbine companies that used to
+depend on the LLM correctly guessing their relevance (`Fred. Olsen 1848`,
+`World Wide Wind`, `Verta`, `Ventum Dynamics`, `Norhybrid Renewables`) now
+carry `naics=1.0` directly via a newly-added `333611` ("Turbine and
+Turbine Generator Set Units Manufacturing") prefix - most of them skip
+the LLM stage entirely now, which is strictly better: a deterministic
+correct answer beats a probabilistic one that happened to land right.
+The general lesson, stated plainly: **the taxonomy is the least tested
+part of this system, and it's easy to be technically not-wrong (a real
+NAICS code, a real industry description) while still building the wrong
+signal.** The audit script (`naics_audit.py`-style, per 3.4/priorities)
+and manually reading mid-ranked results rather than only the top-5 are
+what caught these, in that order of usefulness.
+
 **Coarse-industry over-matching - now largely fixed by the same
 mechanism.** Query: *"Public software companies with more than 1,000
 employees"*. Before the graduated-NAICS fix, the full top-15 was

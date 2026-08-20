@@ -77,7 +77,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "METRO Rom\u00e2nia's primary industry is General Line Grocery Merchant Wholesalers, which is a subset of the Logistics industry, and its core offerings include Logistics and Supply Chain Management, indicating a strong connection to the query's intent.",
+        "reason": "METRO Rom\u00e2nia's primary industry is General Line Grocery Merchant Wholesalers, which is a subset of the Logistics industry, and its core offerings include Logistics and Supply Chain Management, indicating a strong connection to the Logistics space.",
         "votes": {}
       }
     }

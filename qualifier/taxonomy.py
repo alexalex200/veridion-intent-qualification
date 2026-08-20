@@ -102,8 +102,19 @@ CONCEPTS = {
     },
     "packaging_supply": {
         "aliases": ["packaging", "packaging materials", "packaging supplier"],
+        # 326199 ("All Other Plastics Product Manufacturing") turned out to
+        # be the dominant code for cosmetic-packaging specialists in this
+        # dataset (SZ SJ Packaging, Ningbo Onson, Crystal International -
+        # all explicitly "specialized in the production of cosmetic
+        # packaging" in their own descriptions) - missed in the original
+        # taxonomy, caught the same way as the software/EV-battery gaps
+        # (auditing real data, not assuming). Kept weak rather than strong
+        # because it's a broad catch-all bucket shared with unrelated
+        # plastics manufacturers (it's also used by "renewable_equipment").
         "naics_prefixes": ["3221", "32221", "322211", "326112", "326160", "327213",
-                            "561910", "323111"],
+                            "561910", "323111", "326199"],
+        "strong_naics_prefixes": ["3221", "32221", "322211", "326112", "326160",
+                                   "327213", "561910", "323111"],
         "keywords": ["packaging", "container", "bottle", "jar", "tube", "closure",
                       "label", "carton", "corrugated", "contract packaging",
                       "co-packing", "injection molding", "blow molding",
@@ -142,11 +153,26 @@ CONCEPTS = {
     },
     "clean_energy": {
         "aliases": ["clean energy", "renewable energy", "green energy"],
-        "naics_prefixes": ["2211", "221114", "221115", "335911", "541690"],
-        # 541690 ("Environmental Consulting Services") catches consulting
-        # firms that talk about sustainability without generating or
-        # storing energy themselves - weak on its own.
-        "strong_naics_prefixes": ["2211", "221114", "221115", "335911"],
+        # 335910, not 335911 - see the "335911 typo" note on
+        # ev_battery_supply_chain below; this concept had the same
+        # transcription error and inherited the same zero-hit bug for
+        # battery-storage companies. 333611 ("Turbine and Turbine
+        # Generator Set Units Manufacturing") was added after observing
+        # that wind/turbine companies (Fred. Olsen 1848, World Wide Wind,
+        # Verta, Magnora, Ventum Dynamics) were scoring naics=0 here and
+        # depending entirely on the LLM stage to be correctly recognized
+        # as clean energy - which it did, but inconsistently (see
+        # WRITEUP.md); giving them real NAICS support removes that
+        # dependency. 541690 ("Other Scientific and Technical Consulting
+        # Services") was removed entirely, not just downweighted: it's
+        # shared with completely unrelated consultancies (a marine-biology
+        # / bioeconomy company scored naics=0.5 and was then incorrectly
+        # LLM-approved as a "clean energy startup" on the strength of that
+        # shared code) and its genuine true positives (small renewable
+        # consulting firms) still surface via keyword/embedding + LLM
+        # without it.
+        "naics_prefixes": ["2211", "221114", "221115", "335910", "333611"],
+        "strong_naics_prefixes": ["2211", "221114", "221115", "335910", "333611"],
         "keywords": ["solar", "wind", "renewable", "clean energy", "battery storage",
                       "green hydrogen", "carbon", "sustainability", "decarbonization"],
         "expansion_terms": ["renewable energy company", "solar power", "wind energy",
