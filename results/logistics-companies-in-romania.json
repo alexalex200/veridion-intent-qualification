@@ -16,7 +16,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "logistics"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Compania Na\u021bional\u0103 de C\u0103i Ferate CFR",
@@ -33,64 +34,14 @@
       "unverified_fields": [],
       "matched_concepts": [
         "logistics"
-      ]
-    },
-    {
-      "operational_name": "Portul Constanta",
-      "website": "portofconstantza.com",
-      "country": "ro",
-      "final_score": 0.4308,
-      "score_breakdown": {
-        "embedding": 0.013,
-        "naics": 1.0,
-        "keyword": 0.5
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "logistics"
-      ]
-    },
-    {
-      "operational_name": "Valtec",
-      "website": "valtec.nl",
-      "country": "ro",
-      "final_score": 0.2234,
-      "score_breakdown": {
-        "embedding": 0.0334,
-        "naics": 0.0,
-        "keyword": 0.8333
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "logistics"
-      ]
-    },
-    {
-      "operational_name": "METRO Rom\u00e2nia",
-      "website": "metro.ro",
-      "country": "ro",
-      "final_score": 0.2186,
-      "score_breakdown": {
-        "embedding": 0.1154,
-        "naics": 0.0,
-        "keyword": 0.6667
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "logistics"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Po\u0219ta Rom\u00e2n\u0103",
       "website": "posta-romana.ro",
       "country": "ro",
-      "final_score": 0.196,
+      "final_score": 0.346,
       "score_breakdown": {
         "embedding": 0.0651,
         "naics": 0.0,
@@ -101,64 +52,18 @@
       "unverified_fields": [],
       "matched_concepts": [
         "logistics"
-      ]
-    },
-    {
-      "operational_name": "Rompetrol",
-      "website": "rompetrol.com",
-      "country": "ro",
-      "final_score": 0.1889,
-      "score_breakdown": {
-        "embedding": 0.0494,
-        "naics": 0.0,
-        "keyword": 0.6667
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "logistics"
-      ]
-    },
-    {
-      "operational_name": "STILL",
-      "website": "still.ro",
-      "country": "ro",
-      "final_score": 0.1854,
-      "score_breakdown": {
-        "embedding": 0.0417,
-        "naics": 0.0,
-        "keyword": 0.6667
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "logistics"
-      ]
-    },
-    {
-      "operational_name": "OMV",
-      "website": "omv.ro",
-      "country": "ro",
-      "final_score": 0.1798,
-      "score_breakdown": {
-        "embedding": 0.0291,
-        "naics": 0.0,
-        "keyword": 0.6667
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "logistics"
-      ]
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Po\u0219ta Rom\u00e2n\u0103's primary industry is postal services, which directly matches the query's term 'Logistics companies in Romania'.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "OSCAR",
       "website": "oscars.ro",
       "country": "ro",
-      "final_score": 0.1788,
+      "final_score": 0.3288,
       "score_breakdown": {
         "embedding": 0.027,
         "naics": 0.0,
@@ -169,13 +74,18 @@
       "unverified_fields": [],
       "matched_concepts": [
         "logistics"
-      ]
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "OSCAR's primary industry is Petroleum and Petroleum Products Merchant Wholesalers, which directly matches the query's NAICS code 424720. Its core offerings are also centered around logistics and fuel distribution, making it a strong match.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "Transgaz",
       "website": "transgaz.ro",
       "country": "ro",
-      "final_score": 0.1755,
+      "final_score": 0.3255,
       "score_breakdown": {
         "embedding": 0.0196,
         "naics": 0.0,
@@ -186,13 +96,18 @@
       "unverified_fields": [],
       "matched_concepts": [
         "logistics"
-      ]
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Transgaz's primary industry is Natural Gas Distribution, which is a subset of Logistics/Transportation, and its core offerings are directly related to the management and transmission of natural gas, indicating it is a logistics company.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "Romgaz",
       "website": "romgaz.ro",
       "country": "ro",
-      "final_score": 0.1603,
+      "final_score": 0.3103,
       "score_breakdown": {
         "embedding": 0.0784,
         "naics": 0.0,
@@ -203,16 +118,21 @@
       "unverified_fields": [],
       "matched_concepts": [
         "logistics"
-      ]
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Although Romgaz's primary industry is Natural Gas Extraction, its core offerings and target markets are primarily focused on the energy and oil and gas sectors, making it a strong match for the query.",
+        "votes": {}
+      }
     },
     {
-      "operational_name": "Rompetrol",
-      "website": "rompetrol.ro",
+      "operational_name": "Portul Constanta",
+      "website": "portofconstantza.com",
       "country": "ro",
-      "final_score": 0.1428,
+      "final_score": 0.1723,
       "score_breakdown": {
-        "embedding": 0.0396,
-        "naics": 0.0,
+        "embedding": 0.013,
+        "naics": 1.0,
         "keyword": 0.5
       },
       "gate_passed": true,
@@ -220,41 +140,12 @@
       "unverified_fields": [],
       "matched_concepts": [
         "logistics"
-      ]
-    },
-    {
-      "operational_name": "Fildas Trading",
-      "website": "fildas.ro",
-      "country": "ro",
-      "final_score": 0.1382,
-      "score_breakdown": {
-        "embedding": 0.0293,
-        "naics": 0.0,
-        "keyword": 0.5
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "logistics"
-      ]
-    },
-    {
-      "operational_name": "AQUA CENTER",
-      "website": "aquacenter.ro",
-      "country": "ro",
-      "final_score": 0.1337,
-      "score_breakdown": {
-        "embedding": 0.0193,
-        "naics": 0.0,
-        "keyword": 0.5
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "logistics"
-      ]
+      ],
+      "llm_verdict": {
+        "match": false,
+        "reason": "Portul Constanta's primary industry is Port and Harbor Operations, which is a specific segment of the Logistics industry, but its core business is not directly related to logistics services.",
+        "votes": {}
+      }
     }
   ]
 }

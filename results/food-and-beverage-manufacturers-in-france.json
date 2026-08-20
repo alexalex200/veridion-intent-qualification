@@ -16,7 +16,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "food_beverage"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Dechelette Estate",
@@ -33,7 +34,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "food_beverage"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "La P\u00e9ro",
@@ -50,7 +52,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "food_beverage"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "GreenLeaf Mate",
@@ -67,7 +70,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "food_beverage"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Riviera Kombucha",
@@ -84,7 +88,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "food_beverage"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Auvergnat Cola",
@@ -101,7 +106,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "food_beverage"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Geyer",
@@ -118,7 +124,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "food_beverage"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "L'Essinganaise",
@@ -135,7 +142,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "food_beverage"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Elixia",
@@ -152,7 +160,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "food_beverage"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Conserverie Fourmi",
@@ -169,7 +178,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "food_beverage"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Fermenting & Co",
@@ -186,7 +196,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "food_beverage"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Famille Pouille",
@@ -203,7 +214,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "food_beverage"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Club-Mate",
@@ -220,7 +232,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "food_beverage"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Kermen\u00e9",
@@ -237,7 +250,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "food_beverage"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "La Limonaderie de Paris",
@@ -254,7 +268,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "food_beverage"
-      ]
+      ],
+      "llm_verdict": null
     }
   ]
 }

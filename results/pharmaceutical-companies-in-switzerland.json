@@ -16,7 +16,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "pharma"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "CordenPharma",
@@ -33,7 +34,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "pharma"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Idorsia",
@@ -50,7 +52,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "pharma"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Debiopharm",
@@ -67,7 +70,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "pharma"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Acino",
@@ -84,7 +88,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "pharma"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Novartis",
@@ -101,7 +106,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "pharma"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Ferring",
@@ -118,7 +124,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "pharma"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "ADC Therapeutics",
@@ -135,7 +142,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "pharma"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Helsinn",
@@ -152,7 +160,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "pharma"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "PolyPeptide",
@@ -169,7 +178,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "pharma"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "CARBOGEN AMCIS",
@@ -186,7 +196,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "pharma"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Bachem",
@@ -203,7 +214,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "pharma"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Celonic",
@@ -220,41 +232,52 @@
       "unverified_fields": [],
       "matched_concepts": [
         "pharma"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
-      "operational_name": "Drugs for Neglected Diseases initiative",
-      "website": "dndi.org",
+      "operational_name": "Octapharma",
+      "website": "octapharma.com",
       "country": "ch",
-      "final_score": 0.5806,
+      "final_score": 0.5919,
       "score_breakdown": {
-        "embedding": 0.0679,
+        "embedding": 0.0376,
         "naics": 1.0,
-        "keyword": 1.0
+        "keyword": 0.5
       },
       "gate_passed": true,
       "hard_fail_reasons": [],
       "unverified_fields": [],
       "matched_concepts": [
         "pharma"
-      ]
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Octapharma's primary industry is Biological Product (except Diagnostic) Manufacturing, which is a specific segment of the pharmaceutical industry, and its core offerings are directly related to pharmaceuticals.",
+        "votes": {}
+      }
     },
     {
-      "operational_name": "CRISPR Therapeutics",
-      "website": "crisprtx.com",
+      "operational_name": "Teoxane",
+      "website": "teoxane.com",
       "country": "ch",
-      "final_score": 0.568,
+      "final_score": 0.5876,
       "score_breakdown": {
-        "embedding": 0.0399,
+        "embedding": 0.0279,
         "naics": 1.0,
-        "keyword": 1.0
+        "keyword": 0.5
       },
       "gate_passed": true,
       "hard_fail_reasons": [],
       "unverified_fields": [],
       "matched_concepts": [
         "pharma"
-      ]
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "TEOXANE's primary industry is Pharmaceutical Preparation Manufacturing, and its core offerings are closely related to the pharmaceutical industry, indicating a strong match with the query.",
+        "votes": {}
+      }
     }
   ]
 }

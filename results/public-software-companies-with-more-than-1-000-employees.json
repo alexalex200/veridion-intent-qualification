@@ -16,7 +16,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "software"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Fujitsu",
@@ -33,7 +34,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "software"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "EPAM",
@@ -50,7 +52,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "software"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Capgemini",
@@ -67,7 +70,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "software"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "SAIC",
@@ -84,7 +88,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "software"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Atos",
@@ -101,7 +106,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "software"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Mphasis",
@@ -118,7 +124,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "software"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "DWS Group",
@@ -135,7 +142,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "software"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Genpact",
@@ -152,7 +160,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "software"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "CGI",
@@ -169,7 +178,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "software"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "NTT DATA",
@@ -186,7 +196,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "software"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Tata Consultancy Services",
@@ -203,7 +214,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "software"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Wipro",
@@ -220,7 +232,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "software"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Leidos",
@@ -237,7 +250,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "software"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Booz Allen",
@@ -254,7 +268,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "software"
-      ]
+      ],
+      "llm_verdict": null
     }
   ]
 }

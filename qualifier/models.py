@@ -168,3 +168,24 @@ class Company:
             if sec.label:
                 parts.append(sec.label)
         return " ".join(p for p in parts if p)
+
+    def summary_for_llm(self) -> str:
+        """Concise, human-readable profile for the LLM verification prompt -
+        deliberately compact so the model reads it in a handful of lines,
+        which is what keeps each verification call fast."""
+        country = self.country_code.upper() if self.country_code else "unknown"
+        naics = f"{self.primary_naics.code} - {self.primary_naics.label}" if self.primary_naics else "unknown"
+        lines = [
+            f"Name: {self.display_name}",
+            f"Country: {country}",
+            f"Employees: {self.employee_count if self.employee_count is not None else 'unknown'}",
+            f"Revenue: {self.revenue if self.revenue is not None else 'unknown'}",
+            f"Public: {self.is_public if self.is_public is not None else 'unknown'}",
+            f"Founded: {self.year_founded if self.year_founded is not None else 'unknown'}",
+            f"Primary industry (NAICS): {naics}",
+            f"Business model: {', '.join(self.business_model) or 'unknown'}",
+            f"Core offerings: {', '.join(self.core_offerings) or 'unknown'}",
+            f"Target markets: {', '.join(self.target_markets) or 'unknown'}",
+            f"Description: {self.description[:600]}",
+        ]
+        return "\n".join(lines)

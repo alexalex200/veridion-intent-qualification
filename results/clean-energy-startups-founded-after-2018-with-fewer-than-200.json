@@ -2,6 +2,78 @@
   "query": "Clean energy startups founded after 2018 with fewer than 200 employees",
   "results": [
     {
+      "operational_name": "Kraftkar Energi",
+      "website": "kraftkarenergi.no",
+      "country": "no",
+      "final_score": 0.5839,
+      "score_breakdown": {
+        "embedding": 0.1976,
+        "naics": 1.0,
+        "keyword": 0.5
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [
+        "employee_count unknown",
+        "year_founded unknown"
+      ],
+      "matched_concepts": [
+        "clean_energy"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Kraftkar Energi's primary industry is solar electric power generation, and its core offerings are focused on solar energy solutions, indicating it is a clean energy startup founded after 2018 with a focus on solar energy."
+      }
+    },
+    {
+      "operational_name": "Carita och Torbj\u00f6rn",
+      "website": "cktl.se",
+      "country": "se",
+      "final_score": 0.5685,
+      "score_breakdown": {
+        "embedding": 0.1632,
+        "naics": 1.0,
+        "keyword": 0.5
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [
+        "employee_count unknown",
+        "year_founded unknown"
+      ],
+      "matched_concepts": [
+        "clean_energy"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "The company's primary industry is Wind Electric Power Generation, and its core offerings are directly related to wind power, indicating it is a clean energy startup focused on wind energy. The query's criteria are met as it was founded after 2018 and has fewer than 200 employees."
+      }
+    },
+    {
+      "operational_name": "Galileo Empower Finland",
+      "website": "galileoempower.fi",
+      "country": "fi",
+      "final_score": 0.5508,
+      "score_breakdown": {
+        "embedding": 0.124,
+        "naics": 1.0,
+        "keyword": 0.5
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [
+        "employee_count unknown",
+        "year_founded unknown"
+      ],
+      "matched_concepts": [
+        "clean_energy"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Galileo Empower Finland's primary industry is wind electric power generation, and its core offerings are directly related to wind power, indicating it is a clean energy startup focused on wind energy. The company's business model and target markets also align with the query's criteria."
+      }
+    },
+    {
       "operational_name": "WBS Mobility",
       "website": "e-way24.pl",
       "country": "pl",
@@ -16,7 +88,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "clean_energy"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Volta Capital",
@@ -33,13 +106,104 @@
       "unverified_fields": [],
       "matched_concepts": [
         "clean_energy"
-      ]
+      ],
+      "llm_verdict": null
+    },
+    {
+      "operational_name": "Asvata",
+      "website": "asvata.com",
+      "country": "in",
+      "final_score": 0.2901,
+      "score_breakdown": {
+        "embedding": 0.0335,
+        "naics": 0.0,
+        "keyword": 0.5
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Asvata's primary industry is Environmental Consulting Services, and its core offerings are focused on renewable energy and carbon offset projects, indicating it is a clean energy startup."
+      }
+    },
+    {
+      "operational_name": "Teqniq",
+      "website": "teqniq.fi",
+      "country": "fi",
+      "final_score": 0.2894,
+      "score_breakdown": {
+        "embedding": 0.1171,
+        "naics": 0.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [
+        "employee_count unknown",
+        "year_founded unknown"
+      ],
+      "matched_concepts": [
+        "clean_energy"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Teqniq's primary industry is Engineering Services, and its core offerings are related to wind turbine technology and manufacturing, indicating it is a clean energy startup focused on wind energy. The company's focus on wind turbine technology and manufacturing aligns with the query's criteria."
+      }
+    },
+    {
+      "operational_name": "RJETech",
+      "website": "rjetech.com",
+      "country": "cn",
+      "final_score": 0.2827,
+      "score_breakdown": {
+        "embedding": 0.1098,
+        "naics": 0.0,
+        "keyword": 0.3333
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "RJETech's primary industry is Battery Manufacturing, and its core offerings are directly related to clean energy startups, making it a strong match for the query."
+      }
+    },
+    {
+      "operational_name": "Sola Markis & Persienn",
+      "website": "solamarkis.se",
+      "country": "se",
+      "final_score": 0.2736,
+      "score_breakdown": {
+        "embedding": 0.1747,
+        "naics": 0.0,
+        "keyword": 0.5
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [
+        "employee_count unknown",
+        "year_founded unknown"
+      ],
+      "matched_concepts": [
+        "clean_energy"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Although Sola Markis & Persienn's primary industry is semiconductor manufacturing, its core business is focused on solar panel manufacturing and renewable energy solutions, making it a strong match for the query."
+      }
     },
     {
       "operational_name": "Utilify",
       "website": "utilifyapp.com",
       "country": "us",
-      "final_score": 0.4373,
+      "final_score": 0.1749,
       "score_breakdown": {
         "embedding": 0.12,
         "naics": 1.0,
@@ -50,73 +214,17 @@
       "unverified_fields": [],
       "matched_concepts": [
         "clean_energy"
-      ]
-    },
-    {
-      "operational_name": "Kraftkar Energi",
-      "website": "kraftkarenergi.no",
-      "country": "no",
-      "final_score": 0.4339,
-      "score_breakdown": {
-        "embedding": 0.1976,
-        "naics": 1.0,
-        "keyword": 0.5
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [
-        "employee_count unknown",
-        "year_founded unknown"
       ],
-      "matched_concepts": [
-        "clean_energy"
-      ]
-    },
-    {
-      "operational_name": "Carita och Torbj\u00f6rn",
-      "website": "cktl.se",
-      "country": "se",
-      "final_score": 0.4185,
-      "score_breakdown": {
-        "embedding": 0.1632,
-        "naics": 1.0,
-        "keyword": 0.5
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [
-        "employee_count unknown",
-        "year_founded unknown"
-      ],
-      "matched_concepts": [
-        "clean_energy"
-      ]
-    },
-    {
-      "operational_name": "Galileo Empower Finland",
-      "website": "galileoempower.fi",
-      "country": "fi",
-      "final_score": 0.4008,
-      "score_breakdown": {
-        "embedding": 0.124,
-        "naics": 1.0,
-        "keyword": 0.5
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [
-        "employee_count unknown",
-        "year_founded unknown"
-      ],
-      "matched_concepts": [
-        "clean_energy"
-      ]
+      "llm_verdict": {
+        "match": false,
+        "reason": "Utilify's primary industry is scientific and technical consulting services, not clean energy startups, despite offering energy-related services. The company's focus on digital auditing and energy efficiency projects does not align with the query's criteria of being a clean energy startup."
+      }
     },
     {
       "operational_name": "Enviroway Advisory",
       "website": "envirowayadvisory.com",
       "country": "ar",
-      "final_score": 0.3952,
+      "final_score": 0.1581,
       "score_breakdown": {
         "embedding": 0.0264,
         "naics": 1.0,
@@ -127,13 +235,17 @@
       "unverified_fields": [],
       "matched_concepts": [
         "clean_energy"
-      ]
+      ],
+      "llm_verdict": {
+        "match": false,
+        "reason": "Enviroway Advisory's primary industry is scientific and technical consulting services, not clean energy startups, and it was founded in 2025, after the query's specified year range."
+      }
     },
     {
       "operational_name": "Nakama",
       "website": "nakama-agro.es",
       "country": "es",
-      "final_score": 0.3939,
+      "final_score": 0.1575,
       "score_breakdown": {
         "embedding": 0.0234,
         "naics": 1.0,
@@ -144,13 +256,17 @@
       "unverified_fields": [],
       "matched_concepts": [
         "clean_energy"
-      ]
+      ],
+      "llm_verdict": {
+        "match": false,
+        "reason": "Nakama's core business is primarily focused on scientific and technical consulting services, not clean energy, despite offering some energy-related services. The company's primary industry and business model do not align with the query's focus on clean energy startups."
+      }
     },
     {
       "operational_name": "Norhybrid Renewables",
       "website": "norhybrid.com",
       "country": "no",
-      "final_score": 0.3865,
+      "final_score": 0.1546,
       "score_breakdown": {
         "embedding": 0.3033,
         "naics": 0.0,
@@ -161,13 +277,17 @@
       "unverified_fields": [],
       "matched_concepts": [
         "clean_energy"
-      ]
+      ],
+      "llm_verdict": {
+        "match": false,
+        "reason": "Norhybrid Renewables' primary industry is Turbine and Turbine Generator Set Units Manufacturing, which is not a clean energy startup, and it has fewer than 200 employees, but its business model and core offerings are focused on clean energy solutions."
+      }
     },
     {
       "operational_name": "VASOL TECH",
       "website": "vasol.se",
       "country": "se",
-      "final_score": 0.3507,
+      "final_score": 0.1403,
       "score_breakdown": {
         "embedding": 0.4052,
         "naics": 0.0,
@@ -180,13 +300,17 @@
       ],
       "matched_concepts": [
         "clean_energy"
-      ]
+      ],
+      "llm_verdict": {
+        "match": false,
+        "reason": "VASOL TECH's primary industry is All Other Miscellaneous Electrical Equipment and Component Manufacturing, which does not align with the query's focus on clean energy startups. The company's core offerings are primarily related to solar power solutions, but its business model and primary industry do not match the query's criteria."
+      }
     },
     {
       "operational_name": "SideWind",
       "website": "sidewind.is",
       "country": "is",
-      "final_score": 0.3435,
+      "final_score": 0.1374,
       "score_breakdown": {
         "embedding": 0.2077,
         "naics": 0.0,
@@ -197,79 +321,11 @@
       "unverified_fields": [],
       "matched_concepts": [
         "clean_energy"
-      ]
-    },
-    {
-      "operational_name": "Magnora",
-      "website": "magnoraasa.com",
-      "country": "no",
-      "final_score": 0.3243,
-      "score_breakdown": {
-        "embedding": 0.2576,
-        "naics": 0.0,
-        "keyword": 0.8333
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "clean_energy"
-      ]
-    },
-    {
-      "operational_name": "MantaWind",
-      "website": null,
-      "country": "se",
-      "final_score": 0.3153,
-      "score_breakdown": {
-        "embedding": 0.2339,
-        "naics": 0.0,
-        "keyword": 1.0
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [
-        "employee_count unknown"
       ],
-      "matched_concepts": [
-        "clean_energy"
-      ]
-    },
-    {
-      "operational_name": "Verta",
-      "website": null,
-      "country": "no",
-      "final_score": 0.3001,
-      "score_breakdown": {
-        "embedding": 0.2928,
-        "naics": 0.0,
-        "keyword": 0.8333
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [
-        "employee_count unknown"
-      ],
-      "matched_concepts": [
-        "clean_energy"
-      ]
-    },
-    {
-      "operational_name": "Sintea",
-      "website": "sintea.eu",
-      "country": "it",
-      "final_score": 0.3,
-      "score_breakdown": {
-        "embedding": 0.0,
-        "naics": 1.0,
-        "keyword": 0.0
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "clean_energy"
-      ]
+      "llm_verdict": {
+        "match": false,
+        "reason": "SideWind's primary industry is turbine and turbine generator set units manufacturing, not clean energy startups, and its core offerings are focused on wind turbine technology rather than clean energy solutions."
+      }
     }
   ]
 }

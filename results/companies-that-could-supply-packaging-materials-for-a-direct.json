@@ -16,7 +16,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "packaging_supply"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "BAOLILONG GLASS PACKAGING",
@@ -33,7 +34,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "packaging_supply"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Yijie Packaging",
@@ -50,7 +52,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "packaging_supply"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Lesopack Cos Packaging",
@@ -67,7 +70,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "packaging_supply"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Minh Trang Packaging",
@@ -84,7 +88,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "packaging_supply"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Shenzhen Itop Cosmetic Packaging",
@@ -101,7 +106,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "packaging_supply"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Wenjing Packaging",
@@ -118,7 +124,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "packaging_supply"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Aurelo Packaging Co",
@@ -135,7 +142,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "packaging_supply"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Shanghai Bochen Cosmetic Packaging",
@@ -152,7 +160,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "packaging_supply"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "YONWOO",
@@ -169,7 +178,8 @@
       "unverified_fields": [],
       "matched_concepts": [
         "packaging_supply"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Flextribe",
@@ -186,64 +196,14 @@
       "unverified_fields": [],
       "matched_concepts": [
         "packaging_supply"
-      ]
-    },
-    {
-      "operational_name": "Standard Mold",
-      "website": "standardmold.co.kr",
-      "country": "kr",
-      "final_score": 0.3323,
-      "score_breakdown": {
-        "embedding": 0.3681,
-        "naics": 0.0,
-        "keyword": 0.6667
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "packaging_supply"
-      ]
-    },
-    {
-      "operational_name": "SHEACK Packaging",
-      "website": "sheackpkg.com",
-      "country": "cn",
-      "final_score": 0.3205,
-      "score_breakdown": {
-        "embedding": 0.3947,
-        "naics": 0.0,
-        "keyword": 0.5714
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "packaging_supply"
-      ]
-    },
-    {
-      "operational_name": "SZ SJ Packaging",
-      "website": "szsjpackaging.com",
-      "country": "cn",
-      "final_score": 0.3068,
-      "score_breakdown": {
-        "embedding": 0.4172,
-        "naics": 0.0,
-        "keyword": 0.4762
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "packaging_supply"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Crystal International",
       "website": "crystalintl.com",
       "country": "ca",
-      "final_score": 0.2861,
+      "final_score": 0.4361,
       "score_breakdown": {
         "embedding": 0.4241,
         "naics": 0.0,
@@ -254,7 +214,78 @@
       "unverified_fields": [],
       "matched_concepts": [
         "packaging_supply"
-      ]
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Crystal International's core business is manufacturing and providing customized packaging solutions for the cosmetics industry, making it a direct match for the query.",
+        "votes": {}
+      }
+    },
+    {
+      "operational_name": "Standard Mold",
+      "website": "standardmold.co.kr",
+      "country": "kr",
+      "final_score": 0.1329,
+      "score_breakdown": {
+        "embedding": 0.3681,
+        "naics": 0.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ],
+      "llm_verdict": {
+        "match": false,
+        "reason": "Standard Mold's primary industry is plastics product manufacturing, not cosmetics packaging, despite serving the cosmetics industry. This discrepancy suggests it may not be a direct supplier of packaging materials for cosmetics brands.",
+        "votes": {}
+      }
+    },
+    {
+      "operational_name": "SHEACK Packaging",
+      "website": "sheackpkg.com",
+      "country": "cn",
+      "final_score": 0.1282,
+      "score_breakdown": {
+        "embedding": 0.3947,
+        "naics": 0.0,
+        "keyword": 0.5714
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ],
+      "llm_verdict": {
+        "match": false,
+        "reason": "SHEACK Packaging's primary industry is plastics product manufacturing, not packaging materials specifically for cosmetics, and its core offerings are diverse and not exclusively focused on packaging for direct-to-consumer cosmetics brands.",
+        "votes": {}
+      }
+    },
+    {
+      "operational_name": "SZ SJ Packaging",
+      "website": "szsjpackaging.com",
+      "country": "cn",
+      "final_score": 0.1227,
+      "score_breakdown": {
+        "embedding": 0.4172,
+        "naics": 0.0,
+        "keyword": 0.4762
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ],
+      "llm_verdict": {
+        "match": false,
+        "reason": "SZ SJ Packaging's primary industry is plastics product manufacturing, not packaging materials specifically for cosmetics, but it does offer custom packaging solutions for the beauty and personal care industry.",
+        "votes": {}
+      }
     }
   ]
 }
