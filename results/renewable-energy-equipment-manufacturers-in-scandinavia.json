@@ -96,8 +96,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Tesla Ocean Turbine's primary industry is Turbine and Turbine Generator Set Units Manufacturing, which is a subset of the broader Renewable Energy Equipment Manufacturers industry. The company's focus on tidal energy harvesting systems aligns with the query's intent.",
-        "votes": {}
+        "reason": "Tesla Ocean Turbine's primary industry is Turbine and Turbine Generator Set Units Manufacturing, which is a subset of the broader Renewable Energy Equipment Manufacturers industry. The company's focus on tidal energy harvesting systems aligns with the query's intent."
       }
     },
     {
@@ -119,8 +118,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Pellbin Turbine's primary industry is Turbine and Turbine Generator Set Units Manufacturing, which is a subset of the broader Renewable Energy Equipment Manufacturers industry. The company's focus on ocean and tidal current energy production aligns with the query's intent.",
-        "votes": {}
+        "reason": "Pellbin Turbine's primary industry is Turbine and Turbine Generator Set Units Manufacturing, which is a subset of the broader Renewable Energy Equipment Manufacturers industry. The company's focus on ocean and tidal current energy production aligns with the query's intent."
       }
     },
     {

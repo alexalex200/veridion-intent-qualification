@@ -19,8 +19,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Agility FX's core business is providing financial services, specifically foreign exchange, currency exchange, and international payments, which directly competes with traditional banks in Europe.",
-        "votes": {}
+        "reason": "Agility FX's core business is providing financial services, specifically foreign exchange, currency exchange, and international payments, which directly competes with traditional banks in Europe."
       }
     },
     {
@@ -41,8 +40,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Rantum Capital's core business is providing debt and equity financing solutions, which directly competes with traditional banks in the European market, aligning with the query's intent.",
-        "votes": {}
+        "reason": "Rantum Capital's core business is providing debt and equity financing solutions, which directly competes with traditional banks in the European market, aligning with the query's intent."
       }
     },
     {
@@ -63,8 +61,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Salauddin Global Trading's core business is focused on money transfer services, which directly competes with traditional banks in Europe, making it a strong match for the query's intent.",
-        "votes": {}
+        "reason": "Salauddin Global Trading's core business is focused on money transfer services, which directly competes with traditional banks in Europe, making it a strong match for the query's intent."
       }
     },
     {
@@ -85,8 +82,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Ariv Pay's core business is providing payment processing and financial services, which directly competes with traditional banks in Europe, making it a fast-growing fintech company that matches the query's industry/role intent.",
-        "votes": {}
+        "reason": "Ariv Pay's core business is providing payment processing and financial services, which directly competes with traditional banks in Europe, making it a fast-growing fintech company that matches the query's industry/role intent."
       }
     },
     {
@@ -107,8 +103,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Credito21's core business is providing online credit comparison services and financial advisory, directly competing with traditional banks in Europe, making it a fast-growing fintech company that matches the query's industry/role/product intent.",
-        "votes": {}
+        "reason": "Credito21's core business is providing online credit comparison services and financial advisory, directly competing with traditional banks in Europe, making it a fast-growing fintech company that matches the query's industry/role/product intent."
       }
     },
     {
@@ -129,8 +124,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "FGC Money Transfer's primary industry is Financial Transactions Processing, Reserve, and Clearinghouse Activities, which is a subset of the broader fintech industry, but its core offerings are focused on money transfer services, making it a competitor to traditional banks in the European market.",
-        "votes": {}
+        "reason": "FGC Money Transfer's primary industry is Financial Transactions Processing, Reserve, and Clearinghouse Activities, which is a subset of the broader fintech industry, but its core offerings are focused on money transfer services, making it a competitor to traditional banks in the European market."
       }
     },
     {
@@ -169,8 +163,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "City Exchange's primary industry is Financial Transactions Processing, Reserve, and Clearinghouse Activities, which is a subset of the broader fintech industry, but its core offerings are focused on foreign exchange and remittance services, making it a competitor to traditional banks in the European market.",
-        "votes": {}
+        "reason": "City Exchange's primary industry is Financial Transactions Processing, Reserve, and Clearinghouse Activities, which is a subset of the broader fintech industry, but its core offerings are focused on foreign exchange and remittance services, making it a competitor to traditional banks in the European market."
       }
     },
     {
@@ -191,8 +184,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "VIP Exchange's core business is providing financial services, specifically foreign exchange, currency conversion, and money transfer services, which directly competes with traditional banks in Europe.",
-        "votes": {}
+        "reason": "VIP Exchange's core business is providing financial services, specifically foreign exchange, currency conversion, and money transfer services, which directly competes with traditional banks in Europe."
       }
     },
     {
@@ -213,8 +205,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Euro-Rijn Financial Services' core business is commodity trade finance, which directly competes with traditional banks in the European market, making it a strong match for the query's intent.",
-        "votes": {}
+        "reason": "Euro-Rijn Financial Services' core business is commodity trade finance, which directly competes with traditional banks in the European market, making it a strong match for the query's intent."
       }
     },
     {
@@ -235,8 +226,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Mangal Money Transfer's core business is providing money transfer services, which directly competes with traditional banks in Europe, making it a fast-growing fintech company in the query's industry/role.",
-        "votes": {}
+        "reason": "Mangal Money Transfer's core business is providing money transfer services, which directly competes with traditional banks in Europe, making it a fast-growing fintech company in the query's industry/role."
       }
     },
     {
@@ -275,8 +265,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "EasyKassa's core business is providing enterprise software solutions, consumer internet solutions, and payment processing platforms, which directly competes with traditional banks in the European fintech space.",
-        "votes": {}
+        "reason": "EasyKassa's core business is providing enterprise software solutions, consumer internet solutions, and payment processing platforms, which directly competes with traditional banks in the European fintech space."
       }
     }
   ]

@@ -118,8 +118,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Kraftkar Energi's primary industry is solar electric power generation, and its core offerings are focused on solar energy solutions, making it a strong match for the query's intent.",
-        "votes": {}
+        "reason": "Kraftkar Energi's primary industry is solar electric power generation, and its core offerings are focused on solar energy solutions, making it a strong match for the query's intent."
       }
     },
     {
@@ -140,8 +139,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Mitra Chem's primary industry is battery manufacturing, which is a subset of clean energy, and its core offerings are battery materials solutions, making it a direct match for the query's intent.",
-        "votes": {}
+        "reason": "Mitra Chem's primary industry is battery manufacturing, which is a subset of clean energy, and its core offerings are battery materials solutions, making it a direct match for the query's intent."
       }
     },
     {
@@ -165,8 +163,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Enercon's primary industry is Turbine and Turbine Generator Set Units Manufacturing, which is a subset of the broader Wind Turbine Manufacturing industry. However, the company's core offerings are specifically wind turbine manufacturing, which aligns with the query's intent.",
-        "votes": {}
+        "reason": "Enercon's primary industry is Turbine and Turbine Generator Set Units Manufacturing, which is a subset of the broader Wind Turbine Manufacturing industry. However, the company's core offerings are specifically wind turbine manufacturing, which aligns with the query's intent."
       }
     },
     {
@@ -190,8 +187,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Galileo Empower Finland's primary industry is wind electric power generation, which aligns with the query's NAICS code 221115, and its core offerings are focused on wind turbine manufacturing and renewable energy solutions, indicating a strong presence in the clean energy startup space.",
-        "votes": {}
+        "reason": "Galileo Empower Finland's primary industry is wind electric power generation, which aligns with the query's NAICS code 221115, and its core offerings are focused on wind turbine manufacturing and renewable energy solutions, indicating a strong presence in the clean energy startup space."
       }
     },
     {
@@ -215,8 +211,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "KVA Wind's primary industry is Turbine and Turbine Generator Set Units Manufacturing, and its core offerings are focused on residential wind turbine installation, maintenance, and energy production calculation services, which aligns with the query's focus on clean energy startups in the wind energy space.",
-        "votes": {}
+        "reason": "KVA Wind's primary industry is Turbine and Turbine Generator Set Units Manufacturing, and its core offerings are focused on residential wind turbine installation, maintenance, and energy production calculation services, which aligns with the query's focus on clean energy startups in the wind energy space."
       }
     },
     {
@@ -237,8 +232,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "SolidEdge Solution's primary industry is Battery Manufacturing, which is a subset of the Clean Energy sector, and its core offerings are focused on solid-state lithium battery materials and components, indicating a strong alignment with the query's intent.",
-        "votes": {}
+        "reason": "SolidEdge Solution's primary industry is Battery Manufacturing, which is a subset of the Clean Energy sector, and its core offerings are focused on solid-state lithium battery materials and components, indicating a strong alignment with the query's intent."
       }
     },
     {
@@ -277,8 +271,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Nuvvon's primary industry is Battery Manufacturing, which is a subset of the energy storage sector, and its core offerings are focused on commercializing solid-state lithium metal batteries, a specific type of energy storage solution.",
-        "votes": {}
+        "reason": "Nuvvon's primary industry is Battery Manufacturing, which is a subset of the energy storage sector, and its core offerings are focused on commercializing solid-state lithium metal batteries, a specific type of energy storage solution."
       }
     },
     {
@@ -302,8 +295,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Pellbin Turbine's primary industry is Turbine and Turbine Generator Set Units Manufacturing, which is a subset of the broader Renewable Energy Technology Development and Renewable Energy Technology Manufacturing industries mentioned in the query. However, the company's focus on turbine engineering and energy production solutions aligns with the query's intent.",
-        "votes": {}
+        "reason": "Pellbin Turbine's primary industry is Turbine and Turbine Generator Set Units Manufacturing, which is a subset of the broader Renewable Energy Technology Development and Renewable Energy Technology Manufacturing industries mentioned in the query. However, the company's focus on turbine engineering and energy production solutions aligns with the query's intent."
       }
     },
     {

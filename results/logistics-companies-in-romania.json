@@ -19,8 +19,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Portul Constanta's core business is focused on maritime and river port operations, which aligns with the query's industry/role intent of 'Logistics companies in Romania'. The company's primary industry (NAICS) is also Port and Harbor Operations, further supporting the match.",
-        "votes": {}
+        "reason": "Portul Constanta's core business is focused on maritime and river port operations, which aligns with the query's industry/role intent of 'Logistics companies in Romania'. The company's primary industry (NAICS) is Port and Harbor Operations, further supporting this match."
       }
     },
     {
@@ -77,8 +76,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "METRO Rom\u00e2nia's primary industry is General Line Grocery Merchant Wholesalers, which is a subset of the Logistics industry, and its core offerings include Logistics and Supply Chain Management, indicating a strong connection to the Logistics space.",
-        "votes": {}
+        "reason": "METRO Rom\u00e2nia's primary industry is General Line Grocery Merchant Wholesalers, which is a subset of the Logistics industry, and its core offerings include Logistics and Supply Chain Management, indicating a strong connection to the query's intent."
       }
     }
   ]

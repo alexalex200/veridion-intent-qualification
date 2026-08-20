@@ -145,8 +145,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "SHEACK Packaging's core offerings are primarily focused on packaging solutions for the personal care and cosmetics industries, indicating a strong alignment with the query's intent.",
-        "votes": {}
+        "reason": "SHEACK Packaging's core offerings are primarily focused on packaging solutions for the personal care and cosmetics industries, indicating a strong alignment with the query's intent."
       }
     },
     {
@@ -185,8 +184,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Crystal International's core offerings are primarily focused on manufacturing and providing customized packaging solutions for the cosmetics industry, indicating a strong alignment with the query's intent.",
-        "votes": {}
+        "reason": "Crystal International's core offerings are primarily focused on manufacturing and providing customized packaging solutions for the cosmetics industry, indicating a strong alignment with the query's intent."
       }
     },
     {
@@ -261,8 +259,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Silver Spur's core offerings include Custom Packaging Product Manufacturing, Cosmetic and Personal Care Packaging Solutions, and Stock Packaging Product Manufacturing, which directly aligns with the query's requirement for packaging materials for a direct-to-consumer cosmetics brand.",
-        "votes": {}
+        "reason": "Silver Spur's core offerings include Custom Packaging Product Manufacturing, Cosmetic and Personal Care Packaging Solutions, and Stock Packaging Product Manufacturing, which directly aligns with the query's requirement for packaging materials for a direct-to-consumer cosmetics brand."
       }
     }
   ]

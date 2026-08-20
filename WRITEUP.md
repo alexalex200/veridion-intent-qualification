@@ -37,7 +37,7 @@ just with a locally-hosted LLM as the reranker instead of a cross-encoder,
 since the task ("does this company really satisfy this intent") needs
 more reasoning than a cross-encoder gives.
 
-**Query parsing (`qualifier/query_parser.py` + `qualifier/taxonomy.py`).**
+**Query parsing (`query_parser.py` + `taxonomy.py`).**
 A query is decomposed into two kinds of signal. *Checkable constraints* —
 country/region, employee count, revenue, founding year, public/private —
 are pulled out with regex and a country/region gazetteer. *Industry
@@ -54,7 +54,7 @@ Queries whose topic isn't in the ontology still work — they fall back to
 raw keyword/embedding matching over their own words — degrading gracefully
 rather than failing closed.
 
-**Hard gates (`qualifier/filters.py`).** Cheap, deterministic checks run
+**Hard gates (`matching.py`).** Cheap, deterministic checks run
 before any scoring: a company is rejected only when a field is *present*
 and *clearly violates* the constraint (e.g., `employee_count=50` against
 "more than 1,000 employees"). A missing field never causes rejection — it's
@@ -65,7 +65,7 @@ warning that real company data has heavy missingness (in this dataset,
 `year_founded` for 27%) — a system that hard-rejects on missing data would
 silently drop a large share of legitimate matches.
 
-**Scoring (`qualifier/scoring.py` + `qualifier/embeddings.py`).** Gate
+**Scoring (`matching.py` + `embeddings.py`).** Gate
 survivors get a blended relevance score:
 `0.45·embedding + 0.30·naics + 0.25·keyword`, each in [0,1], minus a small
 penalty per unverified field. This mirrors the standard hybrid-search
@@ -105,17 +105,15 @@ Embedding
 similarity is computed with TF-IDF + cosine similarity (`scikit-learn`),
 fit **once** over the whole company corpus, then scored against every
 company in a single vectorized call — this is what makes the difference
-between "cheap" and "one call per company." An optional
-`sentence-transformers` backend is wired in behind an env var
-(`QUALIFIER_USE_ST=1`); it falls back to TF-IDF automatically if
-unavailable. (A more principled fusion than the current weighted sum would
-be [Reciprocal Rank Fusion](https://www.digitalapplied.com/blog/hybrid-search-bm25-vector-reranking-reference-2026),
+between "cheap" and "one call per company." (A more principled fusion
+than the current weighted sum would be [Reciprocal Rank
+Fusion](https://www.digitalapplied.com/blog/hybrid-search-bm25-vector-reranking-reference-2026),
 which combines rank positions instead of raw scores from different
 distributions - noted in 3.2 as a considered-but-deferred improvement,
 since RRF makes the required per-signal score breakdown less directly
 interpretable.)
 
-**LLM verification (`qualifier/llm_verifier.py`, optional).** After
+**LLM verification (`llm_check.py`, optional).** After
 scoring and sorting, companies whose score falls in an ambiguous middle
 band (`min_score` ≤ score < `borderline_high`, default 0.45) get a single
 verification call to a local Ollama model (`llama3.2:3b`). Companies
@@ -172,16 +170,16 @@ a redesign around it.
   caught by watching wall-clock time, not something I reasoned my way to
   in advance — worth stating plainly, since it's exactly the kind of
   cost mistake the assignment is warning against.
-- Default `llm_votes=1` (a single temperature=0 call) rather than
-  majority-voting by default, even though testing showed temperature=0
-  alone does *not* fully eliminate verdict inconsistency (see 3.3) and
-  published work on [LLM-as-judge
-  reliability](https://arxiv.org/html/2510.27106v1) recommends multi-trial
-  majority voting as the standard mitigation. `--llm-votes N` is available
-  as an opt-in for when reliability matters more than latency; I didn't
-  make it the default because it multiplies the already-slowest stage's
-  cost by N for a gain that the same research describes as high-variance
-  and subject to diminishing returns past a handful of trials.
+- One LLM call per company (temperature=0), not majority-voting across
+  several calls, even though testing showed temperature=0 alone does
+  *not* fully eliminate verdict inconsistency (see 3.3), and published
+  work on [LLM-as-judge reliability](https://arxiv.org/html/2510.27106v1)
+  recommends multi-trial majority voting as the standard mitigation. I
+  didn't build that in, since it multiplies the already-slowest stage's
+  cost for a gain the same research describes as high-variance and
+  subject to diminishing returns past a handful of trials - a reasonable
+  next step (see priorities at the end) but not worth the added
+  complexity for this scope.
 - Hard gates are intentionally lenient on missing data (see 3.1). This
   trades strictness for recall — a company that's plausibly a match but
   missing `employee_count` stays in the running rather than being dropped.
@@ -271,7 +269,7 @@ transcription error that also matched nothing; (3) `454110` for
 "e-commerce platform" doesn't appear anywhere in the dataset at all - not
 a bug, but a genuine absence of any reliable structured signal for that
 query, addressed by leaving the prefix list empty rather than pretending
-otherwise (see `qualifier/taxonomy.py`). Fixing (1) and (2) changed
+otherwise (see `taxonomy.py`). Fixing (1) and (2) changed
 real output, not just internal scores:
 
   | Query | Before | After |
@@ -346,7 +344,7 @@ and never have its industry classification checked at all - the exact
 gap a corroboration-style design is supposed to close. Fixed by requiring
 `naics_score >= 1.0` (industry-*confirmed*, not just industry-adjacent) in
 addition to the score threshold before skipping verification
-(`qualifier/pipeline.py`). A related, sharper bug surfaced by the same fix:
+(`solution.py`). A related, sharper bug surfaced by the same fix:
 even after Globant correctly reached the LLM and got `match: false`, it
 *still* appeared in the qualified results, because the 0.4x rejection
 demotion (0.467 → 0.187) wasn't enough to push it below the 0.12 default
@@ -403,8 +401,10 @@ way, a guess.
   architecture scale-safe in the first place, not an afterthought.
   I'd also batch the verification calls (Ollama supports concurrent
   requests) rather than the current sequential loop.
-- **Batch/async the dense-embedding option** if `sentence-transformers` is
-  enabled — encode in batches on GPU rather than one call per company.
+- **Swap TF-IDF for a real sentence-embedding model** once the corpus is
+  large enough that paraphrase-matching (not just vocabulary overlap)
+  starts to matter more than the simplicity of the current approach -
+  encoded in batches, not one call per company.
 
 ## 3.5 Failure Modes
 
@@ -466,18 +466,18 @@ way, a guess.
 The provided dataset contained 26 sets of byte-identical duplicate rows
 (same name, website, description — e.g. `ENERCON` and `Norhybrid Renewables`
 each appeared twice verbatim). Left in, these would let one company occupy
-two slots in a top-K ranking. `solution.py::load_companies` deduplicates
+two slots in a top-K ranking. `company_data.py::load_companies` deduplicates
 on exact record equality before the pipeline runs (477 → 457 companies).
 Nested fields (`address`, `primary_naics`) were also stored inconsistently
 — sometimes as real JSON objects, sometimes as Python `repr()` strings
-(e.g. `"{'country_code': 'ro', ...}"`) — handled in `qualifier/models.py`
+(e.g. `"{'country_code': 'ro', ...}"`) — handled in `company_data.py`
 via a flexible parser that accepts either form. Less obviously: this
 dataset's NAICS codes follow the **2022 revision**, not 2017 - e.g.
 "Software Publishers" is `513210` here, not the more commonly-referenced
 `511210`/`5112`. A taxonomy authored from general NAICS knowledge without
 checking the actual codes present in the data will silently mismatch on
 any concept that happens to fall in a reclassified sector - see 3.3 for
-how much this mattered in practice (`qualifier/taxonomy.py` now documents
+how much this mattered in practice (`taxonomy.py` now documents
 each such fix inline, and `naics_audit.py`-style validation - diffing a
 taxonomy's prefixes against the dataset's actual code list - is cheap
 enough that it should run automatically, not just once by hand).

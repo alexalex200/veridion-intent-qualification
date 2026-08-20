@@ -19,8 +19,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Flextribe's core business is manufacturing and selling eco-friendly packaging solutions, which is closely related to e-commerce companies using Shopify or similar platforms. The company's direct-to-consumer e-commerce platform and global packaging product distribution suggest a strong connection to the query's intent.",
-        "votes": {}
+        "reason": "Flextribe's core business is manufacturing and selling eco-friendly packaging solutions, which is closely related to e-commerce companies using Shopify or similar platforms. The company's direct-to-consumer e-commerce platform and global packaging product distribution suggest a strong connection to the query's intent."
       }
     }
   ]

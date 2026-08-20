@@ -253,8 +253,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "TEOXANE's primary industry is Pharmaceutical Preparation Manufacturing, which is a subset of the broader Pharmaceutical industry. The company's core offerings are focused on aesthetic medicine and dermal fillers, indicating a strong alignment with the query's intent.",
-        "votes": {}
+        "reason": "TEOXANE's primary industry is Pharmaceutical Preparation Manufacturing, which is a subset of the broader Pharmaceutical industry. The company's core offerings are focused on aesthetic medicine and dermal fillers, indicating a strong alignment with the query's intent."
       }
     },
     {
