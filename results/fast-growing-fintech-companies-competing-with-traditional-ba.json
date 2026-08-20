@@ -2,6 +2,138 @@
   "query": "Fast-growing fintech companies competing with traditional banks in Europe",
   "results": [
     {
+      "operational_name": "Agility FX",
+      "website": "agility-fx.co.uk",
+      "country": "gb",
+      "final_score": 0.5609,
+      "score_breakdown": {
+        "embedding": 0.0754,
+        "naics": 1.0,
+        "keyword": 0.3077
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Agility FX's core business is providing financial services, specifically foreign exchange, currency exchange, and international payments, which directly competes with traditional banks in Europe.",
+        "votes": {}
+      }
+    },
+    {
+      "operational_name": "Rantum Capital",
+      "website": "rantumcapital.de",
+      "country": "de",
+      "final_score": 0.5569,
+      "score_breakdown": {
+        "embedding": 0.0665,
+        "naics": 1.0,
+        "keyword": 0.3077
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Rantum Capital's core business is providing debt and equity financing solutions, which directly competes with traditional banks in the European market, aligning with the query's intent.",
+        "votes": {}
+      }
+    },
+    {
+      "operational_name": "Salauddin Global Trading",
+      "website": "salauddinglobal.co.uk",
+      "country": "gb",
+      "final_score": 0.5489,
+      "score_breakdown": {
+        "embedding": 0.0489,
+        "naics": 1.0,
+        "keyword": 0.3077
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Salauddin Global Trading's core business is focused on money transfer services, which directly competes with traditional banks in Europe, making it a strong match for the query's intent.",
+        "votes": {}
+      }
+    },
+    {
+      "operational_name": "Ariv Pay",
+      "website": "arivpay.com",
+      "country": "gb",
+      "final_score": 0.547,
+      "score_breakdown": {
+        "embedding": 0.0446,
+        "naics": 1.0,
+        "keyword": 0.3077
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Ariv Pay's core business is providing payment processing and financial services, which directly competes with traditional banks in Europe, making it a fast-growing fintech company that matches the query's industry/role intent.",
+        "votes": {}
+      }
+    },
+    {
+      "operational_name": "Credito21",
+      "website": "credito21.es",
+      "country": "es",
+      "final_score": 0.5444,
+      "score_breakdown": {
+        "embedding": 0.0389,
+        "naics": 1.0,
+        "keyword": 0.3077
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Credito21's core business is providing online credit comparison services and financial advisory, directly competing with traditional banks in Europe, making it a fast-growing fintech company that matches the query's industry/role/product intent.",
+        "votes": {}
+      }
+    },
+    {
+      "operational_name": "FGC Money Transfer",
+      "website": "fgcexchange.co.uk",
+      "country": "gb",
+      "final_score": 0.5379,
+      "score_breakdown": {
+        "embedding": 0.0243,
+        "naics": 1.0,
+        "keyword": 0.3077
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "FGC Money Transfer's primary industry is Financial Transactions Processing, Reserve, and Clearinghouse Activities, which is a subset of the broader fintech industry, but its core offerings are focused on money transfer services, making it a competitor to traditional banks in the European market.",
+        "votes": {}
+      }
+    },
+    {
       "operational_name": "European Pay",
       "website": "european-pay.fr",
       "country": "fr",
@@ -16,7 +148,96 @@
       "unverified_fields": [],
       "matched_concepts": [
         "fintech"
-      ]
+      ],
+      "llm_verdict": null
+    },
+    {
+      "operational_name": "City Exchange",
+      "website": "sarafishahr.co.uk",
+      "country": "gb",
+      "final_score": 0.5136,
+      "score_breakdown": {
+        "embedding": 0.0559,
+        "naics": 1.0,
+        "keyword": 0.1538
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "City Exchange's primary industry is Financial Transactions Processing, Reserve, and Clearinghouse Activities, which is a subset of the broader fintech industry, but its core offerings are focused on foreign exchange and remittance services, making it a competitor to traditional banks in the European market.",
+        "votes": {}
+      }
+    },
+    {
+      "operational_name": "VIP Exchange",
+      "website": "vipexchange.uk",
+      "country": "gb",
+      "final_score": 0.5118,
+      "score_breakdown": {
+        "embedding": 0.0518,
+        "naics": 1.0,
+        "keyword": 0.1538
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "VIP Exchange's core business is providing financial services, specifically foreign exchange, currency conversion, and money transfer services, which directly competes with traditional banks in Europe.",
+        "votes": {}
+      }
+    },
+    {
+      "operational_name": "Euro-Rijn Financial Services",
+      "website": "erfinancial.services",
+      "country": "nl",
+      "final_score": 0.4981,
+      "score_breakdown": {
+        "embedding": 0.0213,
+        "naics": 1.0,
+        "keyword": 0.1538
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Euro-Rijn Financial Services' core business is commodity trade finance, which directly competes with traditional banks in the European market, making it a strong match for the query's intent.",
+        "votes": {}
+      }
+    },
+    {
+      "operational_name": "Mangal Money Transfer",
+      "website": "mangalmoneytransfer.co.uk",
+      "country": "gb",
+      "final_score": 0.4923,
+      "score_breakdown": {
+        "embedding": 0.0085,
+        "naics": 1.0,
+        "keyword": 0.1538
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Mangal Money Transfer's core business is providing money transfer services, which directly competes with traditional banks in Europe, making it a fast-growing fintech company in the query's industry/role.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "Phin",
@@ -33,13 +254,36 @@
       "unverified_fields": [],
       "matched_concepts": [
         "fintech"
-      ]
+      ],
+      "llm_verdict": null
+    },
+    {
+      "operational_name": "EasyKassa",
+      "website": "easykassa.at",
+      "country": "at",
+      "final_score": 0.4639,
+      "score_breakdown": {
+        "embedding": 0.031,
+        "naics": 1.0,
+        "keyword": 0.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "fintech"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "EasyKassa's core business is providing enterprise software solutions, consumer internet solutions, and payment processing platforms, which directly competes with traditional banks in the European fintech space.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "SkyHarvest",
       "website": "skyharvest.eu",
       "country": "at",
-      "final_score": 0.4362,
+      "final_score": 0.1745,
       "score_breakdown": {
         "embedding": 0.0463,
         "naics": 1.0,
@@ -50,13 +294,18 @@
       "unverified_fields": [],
       "matched_concepts": [
         "fintech"
-      ]
+      ],
+      "llm_verdict": {
+        "match": false,
+        "reason": "SkyHarvest's primary industry is International, Secondary Market, and All Other Nondepository Credit Intermediation, which is a broad category that includes fintech companies, but its core offerings are focused on agricultural finance, not traditional banking or fintech services.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "CTC FUND",
       "website": "ctcfundlimited.com",
       "country": "gb",
-      "final_score": 0.4241,
+      "final_score": 0.1696,
       "score_breakdown": {
         "embedding": 0.1049,
         "naics": 1.0,
@@ -67,194 +316,12 @@
       "unverified_fields": [],
       "matched_concepts": [
         "fintech"
-      ]
-    },
-    {
-      "operational_name": "Agility FX",
-      "website": "agility-fx.co.uk",
-      "country": "gb",
-      "final_score": 0.4109,
-      "score_breakdown": {
-        "embedding": 0.0754,
-        "naics": 1.0,
-        "keyword": 0.3077
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "fintech"
-      ]
-    },
-    {
-      "operational_name": "Rantum Capital",
-      "website": "rantumcapital.de",
-      "country": "de",
-      "final_score": 0.4069,
-      "score_breakdown": {
-        "embedding": 0.0665,
-        "naics": 1.0,
-        "keyword": 0.3077
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "fintech"
-      ]
-    },
-    {
-      "operational_name": "Salauddin Global Trading",
-      "website": "salauddinglobal.co.uk",
-      "country": "gb",
-      "final_score": 0.3989,
-      "score_breakdown": {
-        "embedding": 0.0489,
-        "naics": 1.0,
-        "keyword": 0.3077
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "fintech"
-      ]
-    },
-    {
-      "operational_name": "Ariv Pay",
-      "website": "arivpay.com",
-      "country": "gb",
-      "final_score": 0.397,
-      "score_breakdown": {
-        "embedding": 0.0446,
-        "naics": 1.0,
-        "keyword": 0.3077
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "fintech"
-      ]
-    },
-    {
-      "operational_name": "Credito21",
-      "website": "credito21.es",
-      "country": "es",
-      "final_score": 0.3944,
-      "score_breakdown": {
-        "embedding": 0.0389,
-        "naics": 1.0,
-        "keyword": 0.3077
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "fintech"
-      ]
-    },
-    {
-      "operational_name": "Aircash",
-      "website": "aircash.eu",
-      "country": "hr",
-      "final_score": 0.3922,
-      "score_breakdown": {
-        "embedding": 0.0339,
-        "naics": 1.0,
-        "keyword": 0.3077
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "fintech"
-      ]
-    },
-    {
-      "operational_name": "FGC Money Transfer",
-      "website": "fgcexchange.co.uk",
-      "country": "gb",
-      "final_score": 0.3879,
-      "score_breakdown": {
-        "embedding": 0.0243,
-        "naics": 1.0,
-        "keyword": 0.3077
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "fintech"
-      ]
-    },
-    {
-      "operational_name": "Folio",
-      "website": "folio.no",
-      "country": "no",
-      "final_score": 0.3834,
-      "score_breakdown": {
-        "embedding": 0.0998,
-        "naics": 1.0,
-        "keyword": 0.1538
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "fintech"
-      ]
-    },
-    {
-      "operational_name": "ECrowd Invest",
-      "website": null,
-      "country": "es",
-      "final_score": 0.3786,
-      "score_breakdown": {
-        "embedding": 0.0892,
-        "naics": 1.0,
-        "keyword": 0.1538
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "fintech"
-      ]
-    },
-    {
-      "operational_name": "City Exchange",
-      "website": "sarafishahr.co.uk",
-      "country": "gb",
-      "final_score": 0.3636,
-      "score_breakdown": {
-        "embedding": 0.0559,
-        "naics": 1.0,
-        "keyword": 0.1538
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "fintech"
-      ]
-    },
-    {
-      "operational_name": "VIP Exchange",
-      "website": "vipexchange.uk",
-      "country": "gb",
-      "final_score": 0.3618,
-      "score_breakdown": {
-        "embedding": 0.0518,
-        "naics": 1.0,
-        "keyword": 0.1538
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "fintech"
-      ]
+      ],
+      "llm_verdict": {
+        "match": false,
+        "reason": "CTC FUND's primary industry is International, Secondary Market, and All Other Nondepository Credit Intermediation, which is a subset of the broader fintech industry, but does not directly compete with traditional banks in Europe as the query suggests.",
+        "votes": {}
+      }
     }
   ]
 }

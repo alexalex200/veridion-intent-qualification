@@ -2,14 +2,14 @@
   "query": "B2B SaaS companies providing HR solutions in Europe",
   "results": [
     {
-      "operational_name": "ASCIA",
-      "website": "ascia.pt",
-      "country": "pt",
-      "final_score": 0.5601,
+      "operational_name": "Bizneo HR",
+      "website": "bizneo.com",
+      "country": "es",
+      "final_score": 0.6701,
       "score_breakdown": {
-        "embedding": 0.2076,
+        "embedding": 0.2669,
         "naics": 1.0,
-        "keyword": 0.6667
+        "keyword": 1.0
       },
       "gate_passed": true,
       "hard_fail_reasons": [],
@@ -21,33 +21,14 @@
       "llm_verdict": null
     },
     {
-      "operational_name": "HRWare Consulting",
-      "website": "hrware.de",
+      "operational_name": "Personio",
+      "website": null,
       "country": "de",
-      "final_score": 0.525,
+      "final_score": 0.6694,
       "score_breakdown": {
-        "embedding": 0.1913,
+        "embedding": 0.2654,
         "naics": 1.0,
-        "keyword": 0.5556
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "software",
-        "saas_hr"
-      ],
-      "llm_verdict": null
-    },
-    {
-      "operational_name": "Globant",
-      "website": "globant.com",
-      "country": "lu",
-      "final_score": 0.5164,
-      "score_breakdown": {
-        "embedding": 0.1106,
-        "naics": 1.0,
-        "keyword": 0.6667
+        "keyword": 1.0
       },
       "gate_passed": true,
       "hard_fail_reasons": [],
@@ -62,187 +43,11 @@
       "operational_name": "Sincron HR",
       "website": "sincronhr.com",
       "country": "ro",
-      "final_score": 0.5151,
+      "final_score": 0.6651,
       "score_breakdown": {
         "embedding": 0.2557,
-        "naics": 0.0,
-        "keyword": 1.0
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "software",
-        "saas_hr"
-      ],
-      "llm_verdict": {
-        "match": true,
-        "reason": "Sincron HR's primary industry is Software Publishers, and its core offerings are HR software solutions, indicating it is a B2B SaaS company providing HR solutions in Europe."
-      }
-    },
-    {
-      "operational_name": "Pandap\u00e9",
-      "website": "pandape.com",
-      "country": "gb",
-      "final_score": 0.5147,
-      "score_breakdown": {
-        "embedding": 0.2549,
-        "naics": 0.0,
-        "keyword": 1.0
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "software",
-        "saas_hr"
-      ],
-      "llm_verdict": {
-        "match": true,
-        "reason": "Pandap\u00e9's primary industry is Software Publishers, and its core offerings are HR-related, indicating it is a B2B SaaS company providing HR solutions in Europe."
-      }
-    },
-    {
-      "operational_name": "Novative",
-      "website": "novative.com",
-      "country": "ch",
-      "final_score": 0.5145,
-      "score_breakdown": {
-        "embedding": 0.2545,
-        "naics": 0.0,
-        "keyword": 1.0
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "software",
-        "saas_hr"
-      ],
-      "llm_verdict": {
-        "match": true,
-        "reason": "Novative's primary industry is Human Resources Consulting Services, and its core offerings are HR-related, indicating it is a B2B SaaS company providing HR solutions in Europe."
-      }
-    },
-    {
-      "operational_name": "Cantoriel",
-      "website": "cantoriel.fr",
-      "country": "fr",
-      "final_score": 0.476,
-      "score_breakdown": {
-        "embedding": 0.2306,
-        "naics": 0.0,
-        "keyword": 0.8889
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "software",
-        "saas_hr"
-      ],
-      "llm_verdict": {
-        "match": true,
-        "reason": "Cantoriel's primary industry is Software Publishers, and its core offerings are HR-related, indicating it is a B2B SaaS company providing HR solutions in Europe."
-      }
-    },
-    {
-      "operational_name": "Sesame HR",
-      "website": "sesamehr.com",
-      "country": "es",
-      "final_score": 0.4657,
-      "score_breakdown": {
-        "embedding": 0.2694,
-        "naics": 0.0,
-        "keyword": 0.7778
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "software",
-        "saas_hr"
-      ],
-      "llm_verdict": {
-        "match": true,
-        "reason": "Sesame HR's primary industry is Software Publishers, and its core offerings are HR software solutions, indicating it is a B2B SaaS company providing HR solutions in Europe."
-      }
-    },
-    {
-      "operational_name": "ICON HR",
-      "website": "iconhrsoftware.azurewebsites.net",
-      "country": "gb",
-      "final_score": 0.4646,
-      "score_breakdown": {
-        "embedding": 0.2052,
-        "naics": 0.0,
-        "keyword": 0.8889
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "software",
-        "saas_hr"
-      ],
-      "llm_verdict": {
-        "match": true,
-        "reason": "ICON HR's primary industry is Software Publishers, and its core offerings are HR-related, indicating it is a B2B SaaS company providing HR solutions in Europe."
-      }
-    },
-    {
-      "operational_name": "Zellis",
-      "website": "zellis.com",
-      "country": "gb",
-      "final_score": 0.4639,
-      "score_breakdown": {
-        "embedding": 0.2655,
-        "naics": 0.0,
-        "keyword": 0.7778
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "software",
-        "saas_hr"
-      ],
-      "llm_verdict": {
-        "match": true,
-        "reason": "Zellis is a service provider with a primary industry of software publishers, but its core offerings are HR solutions, making it a B2B SaaS company providing HR solutions in Europe."
-      }
-    },
-    {
-      "operational_name": "Paychex",
-      "website": "paychex.de",
-      "country": "de",
-      "final_score": 0.46,
-      "score_breakdown": {
-        "embedding": 0.195,
-        "naics": 0.0,
-        "keyword": 0.8889
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "software",
-        "saas_hr"
-      ],
-      "llm_verdict": {
-        "match": true,
-        "reason": "Paychex's primary industry is payroll services, and its core offerings are HR management solutions, indicating it is a B2B SaaS company providing HR solutions in Europe."
-      }
-    },
-    {
-      "operational_name": "Atos",
-      "website": "atos.net",
-      "country": "fr",
-      "final_score": 0.4541,
-      "score_breakdown": {
-        "embedding": 0.0339,
         "naics": 1.0,
-        "keyword": 0.5556
+        "keyword": 1.0
       },
       "gate_passed": true,
       "hard_fail_reasons": [],
@@ -254,13 +59,51 @@
       "llm_verdict": null
     },
     {
-      "operational_name": "UK HR Cloud",
-      "website": "ukhrcloud.com",
+      "operational_name": "Pandap\u00e9",
+      "website": "pandape.com",
       "country": "gb",
-      "final_score": 0.4519,
+      "final_score": 0.6647,
       "score_breakdown": {
-        "embedding": 0.1771,
-        "naics": 0.0,
+        "embedding": 0.2549,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ],
+      "llm_verdict": null
+    },
+    {
+      "operational_name": "BambooHR",
+      "website": "bamboohr.eu",
+      "country": "ie",
+      "final_score": 0.6534,
+      "score_breakdown": {
+        "embedding": 0.2299,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ],
+      "llm_verdict": null
+    },
+    {
+      "operational_name": "Global HR",
+      "website": "globalhruk.com",
+      "country": "gb",
+      "final_score": 0.6303,
+      "score_breakdown": {
+        "embedding": 0.2403,
+        "naics": 1.0,
         "keyword": 0.8889
       },
       "gate_passed": true,
@@ -270,19 +113,111 @@
         "software",
         "saas_hr"
       ],
-      "llm_verdict": {
-        "match": true,
-        "reason": "UK HR Cloud's primary industry is Software Publishers, and its core offerings are HR-related services, indicating it is a B2B SaaS company providing HR solutions in Europe."
-      }
+      "llm_verdict": null
     },
     {
-      "operational_name": "Ciphr",
-      "website": "ciphr.com",
-      "country": "gb",
-      "final_score": 0.4494,
+      "operational_name": "quarksUp",
+      "website": "quarksup.com",
+      "country": "fr",
+      "final_score": 0.6298,
       "score_breakdown": {
-        "embedding": 0.2332,
-        "naics": 0.0,
+        "embedding": 0.2391,
+        "naics": 1.0,
+        "keyword": 0.8889
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ],
+      "llm_verdict": null
+    },
+    {
+      "operational_name": "Educos",
+      "website": "educos.eu",
+      "country": "lu",
+      "final_score": 0.6262,
+      "score_breakdown": {
+        "embedding": 0.1692,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ],
+      "llm_verdict": null
+    },
+    {
+      "operational_name": "Cantoriel",
+      "website": "cantoriel.fr",
+      "country": "fr",
+      "final_score": 0.626,
+      "score_breakdown": {
+        "embedding": 0.2306,
+        "naics": 1.0,
+        "keyword": 0.8889
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ],
+      "llm_verdict": null
+    },
+    {
+      "operational_name": "IguanaHR",
+      "website": "iguanahr.co.uk",
+      "country": "gb",
+      "final_score": 0.623,
+      "score_breakdown": {
+        "embedding": 0.1622,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ],
+      "llm_verdict": null
+    },
+    {
+      "operational_name": "Sun RH",
+      "website": "sun-e.fr",
+      "country": "fr",
+      "final_score": 0.6201,
+      "score_breakdown": {
+        "embedding": 0.2176,
+        "naics": 1.0,
+        "keyword": 0.8889
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ],
+      "llm_verdict": null
+    },
+    {
+      "operational_name": "BrightPay",
+      "website": "brightpay.ie",
+      "country": "ie",
+      "final_score": 0.6159,
+      "score_breakdown": {
+        "embedding": 0.27,
+        "naics": 1.0,
         "keyword": 0.7778
       },
       "gate_passed": true,
@@ -292,20 +227,17 @@
         "software",
         "saas_hr"
       ],
-      "llm_verdict": {
-        "match": true,
-        "reason": "Ciphr's primary industry is Software Publishers, and its core offerings are HR-related services, indicating it is a B2B SaaS company providing HR solutions in Europe."
-      }
+      "llm_verdict": null
     },
     {
-      "operational_name": "Toba HR Solutions",
-      "website": "tobahrsolutions.be",
-      "country": "be",
-      "final_score": 0.4441,
+      "operational_name": "Sesame HR",
+      "website": "sesamehr.com",
+      "country": "es",
+      "final_score": 0.6157,
       "score_breakdown": {
-        "embedding": 0.2833,
-        "naics": 0.0,
-        "keyword": 0.6667
+        "embedding": 0.2694,
+        "naics": 1.0,
+        "keyword": 0.7778
       },
       "gate_passed": true,
       "hard_fail_reasons": [],
@@ -314,10 +246,45 @@
         "software",
         "saas_hr"
       ],
-      "llm_verdict": {
-        "match": true,
-        "reason": "Toba HR Solutions' primary industry is Software Publishers, and its core offerings are HR software solutions, indicating it is a B2B SaaS company providing HR solutions in Europe."
-      }
+      "llm_verdict": null
+    },
+    {
+      "operational_name": "ICON HR",
+      "website": "iconhrsoftware.azurewebsites.net",
+      "country": "gb",
+      "final_score": 0.6146,
+      "score_breakdown": {
+        "embedding": 0.2052,
+        "naics": 1.0,
+        "keyword": 0.8889
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ],
+      "llm_verdict": null
+    },
+    {
+      "operational_name": "Zellis",
+      "website": "zellis.com",
+      "country": "gb",
+      "final_score": 0.6139,
+      "score_breakdown": {
+        "embedding": 0.2655,
+        "naics": 1.0,
+        "keyword": 0.7778
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "software",
+        "saas_hr"
+      ],
+      "llm_verdict": null
     }
   ]
 }

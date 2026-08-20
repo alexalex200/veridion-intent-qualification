@@ -56,6 +56,7 @@ class ParsedQuery:
     matched_concepts: list = field(default_factory=list)
     expansion_terms: list = field(default_factory=list)
     naics_prefixes: set = field(default_factory=set)
+    strong_naics_prefixes: set = field(default_factory=set)
     keywords: set = field(default_factory=set)
 
     def expanded_text(self) -> str:
@@ -131,6 +132,11 @@ def _parse_concepts(query_lower: str, parsed: ParsedQuery) -> None:
             if alias in query_lower:
                 parsed.matched_concepts.append(concept_key)
                 parsed.naics_prefixes |= set(concept["naics_prefixes"])
+                # Concepts without an explicit strong/weak split treat all
+                # their prefixes as strong (backward-compatible default).
+                parsed.strong_naics_prefixes |= set(
+                    concept.get("strong_naics_prefixes", concept["naics_prefixes"])
+                )
                 parsed.keywords |= set(concept["keywords"])
                 parsed.expansion_terms.extend(concept["expansion_terms"])
                 break

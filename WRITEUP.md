@@ -75,7 +75,33 @@ sparse/exact role and TF-IDF cosine plays the semantic-ish role) — the two
 kinds of signal fail differently, so combining them recovers cases either
 one misses alone. NAICS is weighted highest of the three because it's an
 industry classification assigned by the data provider rather than inferred
-from prose — when present, it's the most reliable signal. Embedding
+from prose — when present, it's the most reliable signal.
+
+Two refinements to that base scheme came directly out of error analysis
+against real results, not from design up front:
+
+- **NAICS is graduated, not binary.** Some codes are a precise fit for a
+  concept (`513210` "Software Publishers" for "software company"), others
+  are broad/adjacent (`541511`/`541512`, "Computer Systems Design
+  Services"/"Custom Computer Programming Services" - real IT work, but
+  covers consultancies as much as software product companies). Each
+  taxonomy concept can now declare a `strong_naics_prefixes` subset
+  (full 1.0 credit) versus its full `naics_prefixes` (0.5 credit) - see
+  the "coarse-industry over-matching" fix in 3.3.
+- **Corroboration discount.** When a query carries an industry expectation
+  (`naics_prefixes` non-empty) and a company's own classification flatly
+  disagrees (`naics_score == 0`), keyword overlap alone is discounted
+  (×0.5) rather than trusted at face value - it's the retrieval analogue
+  of a general finding in anomaly/relevance detection that an
+  uncorroborated single signal should carry less weight than one multiple
+  independent signals agree on. Concretely: an oil refiner, a gas utility,
+  and a forklift manufacturer all mention "distribution"/"supply chain"
+  somewhere in their description (real text, adjacent meaning), and none
+  of them have a transportation/warehousing NAICS code - the discount
+  catches this class of false positive deterministically, without relying
+  on the (measurably inconsistent, see 3.3) LLM stage to catch it instead.
+
+Embedding
 similarity is computed with TF-IDF + cosine similarity (`scikit-learn`),
 fit **once** over the whole company corpus, then scored against every
 company in a single vectorized call — this is what makes the difference
@@ -201,50 +227,98 @@ not, by itself, fix this failure mode for the companies that do reach it.
 `--llm-votes N` (majority voting) is the mitigation on offer, at a
 latency cost.
 
-**False positive the cheap stages alone let through, that the LLM stage
-fixes inconsistently.** Query: *"Logistics companies in Romania"*.
-`STILL` (forklifts), `Rompetrol` (oil refining), `Transgaz` (gas
-transmission), `Romgaz` (gas extraction), and `OSCAR` (fuel wholesale) all
-clear the rule+embedding score threshold via `keyword_score ≈ 0.5-0.67` —
-their descriptions legitimately contain words like "distribution" and
-"supply chain," just describing an adjacent role, not the query's target.
-NAICS matching (naics=0.0 for all of them) keeps them below the true
-freight forwarders in rank but doesn't remove them. Across different runs
-of the full 12-query batch, the LLM stage's actual behavior split: in one
-run it correctly demoted `STILL` and `Rompetrol` below the qualification
-threshold; in the run whose output ships in `results/`, it *also* let
-`OSCAR`, `Transgaz`, and `Romgaz` through with `match: true` and a
-plausible-sounding rationale each time ("Transgaz's...core offerings are
-directly related to the management and transmission of natural gas,
-indicating it is a logistics company"). Same prompt, same model, same
-temperature — different outcome depending on which specific companies
-landed in that day's borderline band. This is the concrete case the
-verification stage was built to fix, and also the concrete evidence that
-it does so unreliably (see the temperature=0 finding above).
+**A second, independent prompt bug: fabricating confirmation of
+unverifiable fields.** Separately from the reasoning-quality issue above,
+the verification prompt originally let the model freely discuss employee
+count, revenue, and founding year - fields already checked by hard gates
+before a company ever reaches the LLM stage. For "Clean energy startups
+founded after 2018 with fewer than 200 employees," two companies with
+`employee_count: null` and `year_founded: null` in their actual profile
+got `match: true` with reasoning that explicitly asserted *"it was founded
+after 2018 and has fewer than 200 employees"* - fabricated, not verified,
+since the model had no data to check that against. The fix: the prompt
+now explicitly tells the model those fields are pre-checked and instructs
+it to never assume a value marked "unknown" satisfies the query, reasoning
+only about industry/role fit. Re-running the same three companies after
+the fix, no response mentioned founding year or employee count at all.
+This is worth flagging as its own class of LLM-stage risk, distinct from
+the temperature=0 inconsistency above: the model wasn't uncertain here, it
+was *confidently wrong* about something outside its actual knowledge -
+grounding what the model is and isn't allowed to reason about turned out
+to matter as much as strictness about the query's actual intent. With
+both prompt fixes and the scoring fixes below in place, "Logistics
+companies in Romania" went from 15 results (many false positives) to 4
+(`Portul Constanta`, `Brasov Industrial Portfolio`, `CFR`, and one
+residual borderline case, `METRO România`, a grocery wholesaler the LLM
+verified as a match on the strength of its own distribution network - a
+defensible but debatable call, and a reminder that "much cleaner" isn't
+"perfect").
 
-**Weak signal, correctly low-confidence.** Query: *"E-commerce companies
-using Shopify or similar platforms"*. The dataset has no technographic
-field (no "uses Shopify" signal anywhere), so the system can only proxy
-via the `ecommerce_platform` concept's keywords/NAICS. Only a handful of
-companies clear the score threshold at all, with top scores far below the
-~0.6–0.7 seen on well-supported queries like "pharmaceutical companies in
-Switzerland." The LLM stage can't invent a signal that isn't in the data
-either — asking it "does this company use Shopify" when nothing in the
-profile says so just produces a plausible-sounding guess, which is worse
-than the rule+embedding stage's honest low score. This is a case where
-*not* trusting the LLM's confident-sounding reasoning is the right call.
+**A silent, wrong assumption about the data - caught by auditing, not
+intuition.** The taxonomy was originally hand-written from general NAICS
+knowledge, e.g. "software companies are NAICS 5112." Results looked
+plausible (companies still ranked, scores were in a normal range) which is
+exactly what made this dangerous - nothing errored. Auditing every
+concept's `naics_prefixes` against the 105 distinct NAICS codes actually
+present in this dataset surfaced three real bugs: (1) this dataset uses
+**NAICS 2022**, which reclassified "Software Publishers" from `511210` to
+`513210` - the "software" and "saas_hr" concepts had been matching *zero*
+software-product companies by NAICS this entire time, silently falling
+back to keyword/embedding-only scoring for what should have been their
+strongest signal; (2) the EV-battery concept had `335911` where the
+dataset actually uses `335910` ("Battery Manufacturing") - a one-digit
+transcription error that also matched nothing; (3) `454110` for
+"e-commerce platform" doesn't appear anywhere in the dataset at all - not
+a bug, but a genuine absence of any reliable structured signal for that
+query, addressed by leaving the prefix list empty rather than pretending
+otherwise (see `qualifier/taxonomy.py`). Fixing (1) and (2) changed
+real output, not just internal scores:
 
-**Coarse-industry over-matching.** Query: *"Public software companies with
-more than 1,000 employees"*. Top rule+embedding results include `Fujitsu`,
-`Capgemini`, `Atos`, `SAIC`, `Genpact`, `CGI` — large public IT-services /
-consulting firms, not "software companies" in the product-company sense a
-reader probably intends. This traces to the `software` concept's NAICS
-prefixes including "Computer Systems Design Services," which covers IT
-consultancies as well as software product companies. Because these
-companies score high enough (naics=1.0, keyword=1.0) to clear
-`borderline_high`, they're never sent to the LLM stage at all — a reminder
-that the LLM safety net only catches errors in the *ambiguous* band, not
-confidently-wrong ones.
+  | Query | Before | After |
+  |---|---|---|
+  | *B2B SaaS companies providing HR solutions in Europe* (top 5) | Globant, ASCIA, HRWare Consulting, Sincron HR, Pandapé (IT consultancies mixed with real HR software) | Bizneo HR, Personio, Sincron HR, Pandapé, BambooHR - all `naics=1.0`, all genuine HR software vendors |
+  | *Companies that manufacture or supply critical components for EV battery production* (top score) | 0.58 (`naics=0.0` for nearly every result - the concept was running on keyword/embedding alone) | 0.72 (`naics=1.0` for the top 15 - Fengyang Pengen, CIDEcell, Altmin, Stratus Materials: genuine battery-materials manufacturers) |
+
+**Coarse-industry over-matching - now largely fixed by the same
+mechanism.** Query: *"Public software companies with more than 1,000
+employees"*. Before the graduated-NAICS fix, the full top-15 was
+IT-services/consulting firms (`Fujitsu`, `Capgemini`, `Atos`, `SAIC`,
+`Genpact`, `CGI`, `NTT DATA`, `Tata Consultancy Services`, `Wipro`...) -
+none of them "software companies" in the product-company sense a reader
+means, all of them `naics=1.0` under the old binary scoring, all
+confidently above `borderline_high` and therefore never reaching the LLM
+stage at all. After marking `5415x` codes as weak (0.5 credit) instead of
+strong, their scores dropped enough to land in the borderline band - and
+the (now hallucination-fixed, see below) LLM stage correctly rejected
+them: *"Fujitsu's primary industry is Computer Systems Design Services,
+which [does not match a software product company]"*, same for EPAM,
+Capgemini, SAIC, Atos. Only `Globant` (score 0.467) still clears
+`borderline_high` outright - a residual imperfection, since Globant is
+also IT-services under the same NAICS code, just with high enough
+keyword/embedding scores to skip verification. This is the concrete
+limit of the design stated in 3.1: the LLM safety net only catches errors
+in the *ambiguous* band, not ones the cheap stages are still (wrongly)
+confident about.
+
+**Weak signal, and the LLM stage makes it *worse*, not better, when
+forced to guess.** Query: *"E-commerce companies using Shopify or similar
+platforms"*. The dataset has no technographic field at all - confirmed by
+the NAICS audit above, not assumed - so `ecommerce_platform` intentionally
+carries no `naics_prefixes`. Before any LLM involvement, this leaves the
+system with only weak keyword/embedding signal and correctly low scores.
+Two different observed runs disagreed on what to do with that weak
+signal: one run returned zero qualifying companies (every borderline
+candidate got LLM-rejected, arguably the most honest possible outcome
+given there's nothing to verify against); the run shipped in `results/`
+returned exactly one - `Flextribe`, a packaging company - with the LLM
+reasoning *"Flextribe's core business is manufacturing and selling
+eco-friendly packaging"* as its justification for `match: true`, which
+does not actually support matching an e-commerce/Shopify query at all.
+That's a non-sequitur verdict, not a defensible edge-case judgment - the
+clearest evidence in this whole exercise that when the underlying data
+has no real signal, adding an LLM verification pass doesn't rescue the
+query; it just adds a plausible-sounding wrapper around what is, either
+way, a guess.
 
 ## 3.4 Scaling to 100,000 companies
 
@@ -280,11 +354,13 @@ confidently-wrong ones.
    to raw keyword/embedding overlap, with no signal to the user that this
    happened.
 2. **NAICS-classification coarseness on confidently-scored companies.**
-   As in the "software companies" example, a broad NAICS bucket can pull
-   in adjacent-but-wrong companies at naics_score=1.0 - and because that
-   pushes them above `borderline_high`, the LLM safety net never sees
-   them. The LLM stage only patches errors in the ambiguous middle; it
-   does nothing for errors the cheap stages are (wrongly) confident about.
+   Mitigated but not eliminated by the strong/weak NAICS split in 3.1/3.3 -
+   `Globant` still clears `borderline_high` on the software query despite
+   being IT-services under the same weak code as the now-correctly-
+   rejected `Fujitsu`/`Capgemini`, just because its keyword+embedding
+   scores happened to be high enough on their own. Whenever a company
+   scores above `borderline_high`, the LLM safety net never sees it - the
+   cheap stages' confidence is never independently checked.
 3. **LLM verdict flips on rerun.** Demonstrated directly in 3.3: the same
    company, query, and prompt produced different verdicts at
    temperature=0 across calls. A single-vote verification result should
@@ -294,8 +370,15 @@ confidently-wrong ones.
    competitive-positioning field, so these get silently treated as
    "fintech companies in Europe." The LLM stage, if asked, may produce a
    confident-sounding rationalization for a "fast-growing" claim it has no
-   actual basis to verify - an LLM's fluency here is a liability, not a
-   feature, unless the prompt explicitly tells it to say "cannot verify."
+   actual basis to verify.
+5. **A weak-signal query can get a confidently-wrong single answer instead
+   of an honestly-empty result.** The "E-commerce/Shopify" case in 3.3:
+   with no real signal to work from, one run returned zero results (right
+   call) and another returned one wrong one with fluent-but-nonsensical
+   LLM justification. Zero results looks like a broken system to a user;
+   one wrong result looks like a working one. The failure that *looks*
+   worse is actually the safer one, which is a genuinely awkward property
+   to design a UI around.
 
 **What I'd monitor in production:**
 
@@ -327,22 +410,35 @@ on exact record equality before the pipeline runs (477 → 457 companies).
 Nested fields (`address`, `primary_naics`) were also stored inconsistently
 — sometimes as real JSON objects, sometimes as Python `repr()` strings
 (e.g. `"{'country_code': 'ro', ...}"`) — handled in `qualifier/models.py`
-via a flexible parser that accepts either form.
+via a flexible parser that accepts either form. Less obviously: this
+dataset's NAICS codes follow the **2022 revision**, not 2017 - e.g.
+"Software Publishers" is `513210` here, not the more commonly-referenced
+`511210`/`5112`. A taxonomy authored from general NAICS knowledge without
+checking the actual codes present in the data will silently mismatch on
+any concept that happens to fall in a reclassified sector - see 3.3 for
+how much this mattered in practice (`qualifier/taxonomy.py` now documents
+each such fix inline, and `naics_audit.py`-style validation - diffing a
+taxonomy's prefixes against the dataset's actual code list - is cheap
+enough that it should run automatically, not just once by hand).
 
 ## What I'd prioritize next
 
-1. A small labelled eval set (even ~5 companies × 12 queries, hand-judged)
+1. Automate the NAICS-prefix audit (3.3) as a startup check or test, not
+   a one-off manual script - it caught real, silent bugs affecting 3 of
+   12 concepts, and nothing about the system would have surfaced them on
+   its own if I hadn't gone looking.
+2. A small labelled eval set (even ~5 companies × 12 queries, hand-judged)
    to replace eyeballing with a measurable precision/recall number per
    query, and specifically to measure the LLM stage's net effect (does it
    improve precision more than its own inconsistency costs?) rather than
    assuming it helps.
-2. Concurrent/batched LLM verification calls instead of the current
+3. Concurrent/batched LLM verification calls instead of the current
    sequential loop - the biggest remaining latency cost once the candidate
    window is bounded.
-3. Widening the taxonomy, since it's currently the single biggest lever on
-   quality for the rule+embedding stages and the most likely thing to be
-   incomplete for queries outside the 12 examples.
-4. Evaluating whether Reciprocal Rank Fusion improves on the current
+4. Widening the taxonomy to more domains, and applying the strong/weak
+   NAICS split (3.1) to the concepts that don't have one yet - it was only
+   added to the five concepts where over-matching was directly observed.
+5. Evaluating whether Reciprocal Rank Fusion improves on the current
    weighted-sum score combination now that there's a decomposable
    `score_breakdown` already logged per company to compare against.
 

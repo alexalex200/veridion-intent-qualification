@@ -236,28 +236,6 @@
       "llm_verdict": null
     },
     {
-      "operational_name": "Octapharma",
-      "website": "octapharma.com",
-      "country": "ch",
-      "final_score": 0.5919,
-      "score_breakdown": {
-        "embedding": 0.0376,
-        "naics": 1.0,
-        "keyword": 0.5
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "pharma"
-      ],
-      "llm_verdict": {
-        "match": true,
-        "reason": "Octapharma's primary industry is Biological Product (except Diagnostic) Manufacturing, which is a specific segment of the pharmaceutical industry, and its core offerings are directly related to pharmaceuticals.",
-        "votes": {}
-      }
-    },
-    {
       "operational_name": "Teoxane",
       "website": "teoxane.com",
       "country": "ch",
@@ -275,9 +253,27 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "TEOXANE's primary industry is Pharmaceutical Preparation Manufacturing, and its core offerings are closely related to the pharmaceutical industry, indicating a strong match with the query.",
+        "reason": "TEOXANE's primary industry is Pharmaceutical Preparation Manufacturing, which is a subset of the broader Pharmaceutical industry. The company's core offerings are focused on aesthetic medicine and dermal fillers, indicating a strong alignment with the query's intent.",
         "votes": {}
       }
+    },
+    {
+      "operational_name": "Drugs for Neglected Diseases initiative",
+      "website": "dndi.org",
+      "country": "ch",
+      "final_score": 0.5806,
+      "score_breakdown": {
+        "embedding": 0.0679,
+        "naics": 1.0,
+        "keyword": 1.0
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "pharma"
+      ],
+      "llm_verdict": null
     }
   ]
 }

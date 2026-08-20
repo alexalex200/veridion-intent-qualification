@@ -15,6 +15,19 @@ differently: NAICS is coarse and sometimes absent from the labelled
 data set; keyword overlap misses paraphrases; embeddings alone conflate
 "topically similar" with "actually relevant" (the exact failure mode
 the assignment calls out for Baseline B).
+
+Corroboration discount: testing surfaced a consistent false-positive
+pattern - companies that share generic business vocabulary with a query
+("distribution", "supply chain", "transportation") without their own
+industry classification supporting it at all (an oil refiner, a gas
+utility, a forklift manufacturer all describe "distribution" somewhere,
+none of them are logistics companies). When a query has an industry
+expectation (naics_prefixes) and a company's classification flatly
+disagrees (naics_score == 0), keyword overlap alone is weaker evidence -
+it's corroborated by nothing structured - so it's discounted. This is the
+retrieval analogue of a general finding in anomaly/relevance detection:
+a single uncorroborated signal should carry less weight than one multiple
+independent signals agree on.
 """
 
 from __future__ import annotations
@@ -29,6 +42,7 @@ W_EMBEDDING = 0.45
 W_NAICS = 0.30
 W_KEYWORD = 0.25
 UNVERIFIED_PENALTY = 0.04
+NAICS_MISMATCH_KEYWORD_PENALTY = 0.5
 
 
 @dataclass
@@ -40,15 +54,28 @@ class ScoreBreakdown:
 
 
 def _naics_score(company: Company, parsed: ParsedQuery) -> float:
+    """Graduated, not binary: some NAICS codes are a strong, specific fit
+    for a concept (e.g. 5112 "Software Publishers" for "software company"),
+    others are broader/adjacent (5415x "Computer Systems Design Services" -
+    real, but describes IT-services firms as much as software product
+    companies). A strong match earns full credit; a weak-only match earns
+    partial credit rather than being indistinguishable from a perfect one."""
     if not parsed.naics_prefixes:
         return 0.0
     best = 0.0
+
+    def tier(code: str) -> float:
+        if any(code.startswith(p) for p in parsed.strong_naics_prefixes):
+            return 1.0
+        if any(code.startswith(p) for p in parsed.naics_prefixes):
+            return 0.5
+        return 0.0
+
     if company.primary_naics and company.primary_naics.code:
-        if any(company.primary_naics.code.startswith(p) for p in parsed.naics_prefixes):
-            best = max(best, 1.0)
+        best = max(best, tier(company.primary_naics.code))
     for sec in company.secondary_naics:
-        if sec.code and any(sec.code.startswith(p) for p in parsed.naics_prefixes):
-            best = max(best, 0.6)
+        if sec.code:
+            best = max(best, tier(sec.code) * 0.6)
     return best
 
 
@@ -69,6 +96,9 @@ def compute_score(
     naics = _naics_score(company, parsed)
     keyword = _keyword_score(company, parsed)
     embedding = max(0.0, float(embedding_similarity))
+
+    if parsed.naics_prefixes and naics == 0.0:
+        keyword *= NAICS_MISMATCH_KEYWORD_PENALTY
 
     relevance = W_EMBEDDING * embedding + W_NAICS * naics + W_KEYWORD * keyword
     final = relevance - UNVERIFIED_PENALTY * unverified_count

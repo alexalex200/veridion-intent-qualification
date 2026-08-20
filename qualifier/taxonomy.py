@@ -74,7 +74,21 @@ CONCEPTS = {
     },
     "software": {
         "aliases": ["software", "saas", "tech company", "it company"],
-        "naics_prefixes": ["5112", "5182", "541511", "541512", "541519"],
+        # 513210 is "Software Publishers" under NAICS 2022 (this dataset's
+        # revision - confirmed against BambooHR/Pandapé's actual codes,
+        # which is where "5112"/"511210", the 2017-revision code, would
+        # have matched instead and found nothing). Kept "5112" too as a
+        # defensive fallback in case a differently-sourced dataset uses
+        # the older scheme. The 5415x codes ("Computer Systems Design
+        # Services", "Custom Computer Programming Services") are what
+        # large IT-services/consulting firms (Fujitsu, Capgemini, Atos,
+        # Genpact, CGI...) are classified under too - real, but not what
+        # "software company" usually means to a reader. Kept in
+        # naics_prefixes for partial credit but not in
+        # strong_naics_prefixes, so they don't outrank actual
+        # software-product companies.
+        "naics_prefixes": ["513210", "5112", "5182", "541511", "541512", "541519"],
+        "strong_naics_prefixes": ["513210", "5112"],
         "keywords": ["software", "saas", "platform", "cloud", "application", "app"],
         "expansion_terms": ["software platform", "cloud software", "technology company"],
     },
@@ -118,7 +132,8 @@ CONCEPTS = {
     "saas_hr": {
         "aliases": ["hr solutions", "hr software", "human resources", "hr saas",
                      "payroll software"],
-        "naics_prefixes": ["5112", "5415"],
+        "naics_prefixes": ["513210", "5112", "5415"],
+        "strong_naics_prefixes": ["513210", "5112"],  # see "software" entry above
         "keywords": ["hr", "human resources", "payroll", "recruiting", "talent",
                       "workforce", "applicant tracking", "benefits administration",
                       "hris"],
@@ -128,6 +143,10 @@ CONCEPTS = {
     "clean_energy": {
         "aliases": ["clean energy", "renewable energy", "green energy"],
         "naics_prefixes": ["2211", "221114", "221115", "335911", "541690"],
+        # 541690 ("Environmental Consulting Services") catches consulting
+        # firms that talk about sustainability without generating or
+        # storing energy themselves - weak on its own.
+        "strong_naics_prefixes": ["2211", "221114", "221115", "335911"],
         "keywords": ["solar", "wind", "renewable", "clean energy", "battery storage",
                       "green hydrogen", "carbon", "sustainability", "decarbonization"],
         "expansion_terms": ["renewable energy company", "solar power", "wind energy",
@@ -136,6 +155,9 @@ CONCEPTS = {
     "fintech": {
         "aliases": ["fintech", "financial technology", "digital bank", "neobank"],
         "naics_prefixes": ["522", "5223", "5224", "523", "5182"],
+        # 523 (securities/investment) and 5182 (data hosting) are broader
+        # and pull in companies with no real banking/payments angle.
+        "strong_naics_prefixes": ["522", "5223", "5224"],
         "keywords": ["fintech", "digital bank", "neobank", "payments", "lending",
                       "banking-as-a-service", "challenger bank", "financial services"],
         "expansion_terms": ["digital banking", "payments platform", "online lending",
@@ -143,7 +165,21 @@ CONCEPTS = {
     },
     "ecommerce_platform": {
         "aliases": ["e-commerce", "ecommerce", "online store", "shopify"],
-        "naics_prefixes": ["454110"],
+        # Deliberately empty. "454110" (Electronic Shopping and Mail-Order
+        # Houses, NAICS 2017) has zero hits in this dataset - audited
+        # against all 105 distinct primary/secondary NAICS codes actually
+        # present. There is no reliable structured signal for "uses
+        # Shopify" in this schema at all: every company that mentions
+        # e-commerce/DTC in its description is NAICS-classified under its
+        # actual product category instead (Walmart -> Warehouse Clubs and
+        # Supercenters, Decathlon -> Sporting Goods Retailers, Forever 21
+        # -> Department Stores...). Leaving a non-matching prefix list here
+        # would be worse than an empty one: the corroboration-discount rule
+        # in scoring.py penalizes keyword-only matches whenever
+        # naics_prefixes is non-empty but doesn't match, which would
+        # unfairly punish this concept for a signal the schema simply
+        # doesn't carry. See WRITEUP.md for the honest read on this query.
+        "naics_prefixes": [],
         "keywords": ["e-commerce", "ecommerce", "online store", "shopify",
                       "direct-to-consumer", "dtc", "online marketplace",
                       "digital storefront"],
@@ -161,7 +197,21 @@ CONCEPTS = {
     "ev_battery_supply_chain": {
         "aliases": ["battery production", "ev battery", "electric vehicle battery",
                      "battery components"],
-        "naics_prefixes": ["335911", "212220", "212221", "325998", "336320", "334419"],
+        # 335910 (Battery Manufacturing) was originally entered as "335911"
+        # (a typo/wrong-revision code) and matched nothing - caught by
+        # auditing every concept's prefixes against the 105 actual NAICS
+        # codes in this dataset. 325180 ("Other Basic Inorganic Chemical
+        # Manufacturing") turned out to be the dominant code for the
+        # battery-*materials* companies (cathode/lithium/electrolyte
+        # suppliers) this query is really asking about - it wasn't in the
+        # original list at all despite being exactly the intended target.
+        "naics_prefixes": ["335910", "325180", "212220", "212221", "335999",
+                            "325998", "336320", "334419"],
+        # 336320 (vehicle electrical equipment), 334419 (electronic
+        # components), and 335999 (misc electrical equipment) are broad
+        # enough to catch companies with no actual battery-materials or
+        # battery-manufacturing role.
+        "strong_naics_prefixes": ["335910", "325180", "212220", "212221"],
         "keywords": ["battery cell", "cathode", "anode", "electrolyte", "separator",
                       "battery management system", "lithium-ion", "lithium", "cobalt",
                       "nickel", "gigafactory", "ev components", "battery pack"],

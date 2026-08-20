@@ -128,28 +128,6 @@
       "llm_verdict": null
     },
     {
-      "operational_name": "Trusted Solutions Group",
-      "website": "tsg28.com",
-      "country": "us",
-      "final_score": 0.5933,
-      "score_breakdown": {
-        "embedding": 0.0714,
-        "naics": 1.0,
-        "keyword": 0.4444
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "construction"
-      ],
-      "llm_verdict": {
-        "match": true,
-        "reason": "Trusted Solutions Group's primary industry is Commercial and Institutional Building Construction, and its core offerings are labor staffing services and general contracting services, indicating it is a construction company.",
-        "votes": {}
-      }
-    },
-    {
       "operational_name": "Quanta Services",
       "website": "quantaservices.com",
       "country": "us",
@@ -264,6 +242,24 @@
       "final_score": 0.5375,
       "score_breakdown": {
         "embedding": 0.1575,
+        "naics": 1.0,
+        "keyword": 0.6667
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "construction"
+      ],
+      "llm_verdict": null
+    },
+    {
+      "operational_name": "Clayton Homes",
+      "website": "claytonhomes.com",
+      "country": "us",
+      "final_score": 0.5164,
+      "score_breakdown": {
+        "embedding": 0.1105,
         "naics": 1.0,
         "keyword": 0.6667
       },

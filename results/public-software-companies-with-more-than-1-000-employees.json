@@ -5,10 +5,10 @@
       "operational_name": "Globant",
       "website": "globant.com",
       "country": "lu",
-      "final_score": 0.6173,
+      "final_score": 0.4673,
       "score_breakdown": {
         "embedding": 0.1496,
-        "naics": 1.0,
+        "naics": 0.5,
         "keyword": 1.0
       },
       "gate_passed": true,
@@ -23,10 +23,10 @@
       "operational_name": "Fujitsu",
       "website": "fujitsu.com",
       "country": "jp",
-      "final_score": 0.5842,
+      "final_score": 0.1737,
       "score_breakdown": {
         "embedding": 0.0761,
-        "naics": 1.0,
+        "naics": 0.5,
         "keyword": 1.0
       },
       "gate_passed": true,
@@ -35,16 +35,20 @@
       "matched_concepts": [
         "software"
       ],
-      "llm_verdict": null
+      "llm_verdict": {
+        "match": false,
+        "reason": "Fujitsu's primary industry is Computer Systems Design Services, which is a subset of the broader IT services industry, not a public software company with more than 1,000 employees.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "EPAM",
       "website": "epam.com",
       "country": "us",
-      "final_score": 0.5805,
+      "final_score": 0.1722,
       "score_breakdown": {
         "embedding": 0.0678,
-        "naics": 1.0,
+        "naics": 0.5,
         "keyword": 1.0
       },
       "gate_passed": true,
@@ -53,16 +57,20 @@
       "matched_concepts": [
         "software"
       ],
-      "llm_verdict": null
+      "llm_verdict": {
+        "match": false,
+        "reason": "EPAM's primary industry is custom computer programming services, which is a subset of the broader software industry, but does not directly match the query's 'Public software companies' intent.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "Capgemini",
       "website": "capgemini.com",
       "country": "ca",
-      "final_score": 0.5777,
+      "final_score": 0.1711,
       "score_breakdown": {
         "embedding": 0.0615,
-        "naics": 1.0,
+        "naics": 0.5,
         "keyword": 1.0
       },
       "gate_passed": true,
@@ -71,16 +79,20 @@
       "matched_concepts": [
         "software"
       ],
-      "llm_verdict": null
+      "llm_verdict": {
+        "match": false,
+        "reason": "Capgemini's primary industry is Computer Systems Design Services, which is a subset of the broader IT Consulting Services industry. The company's core offerings, such as Artificial Intelligence Solutions and Management Consulting Services, further indicate a focus on IT consulting rather than a public software company.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "SAIC",
       "website": "saic.com",
       "country": "us",
-      "final_score": 0.5721,
+      "final_score": 0.1689,
       "score_breakdown": {
         "embedding": 0.0492,
-        "naics": 1.0,
+        "naics": 0.5,
         "keyword": 1.0
       },
       "gate_passed": true,
@@ -89,16 +101,20 @@
       "matched_concepts": [
         "software"
       ],
-      "llm_verdict": null
+      "llm_verdict": {
+        "match": false,
+        "reason": "SAIC's primary industry is Computer Systems Design Services, which is a subset of the broader IT services industry, not a public software company with more than 1,000 employees. The company's core offerings are also focused on IT services, not software development.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "Atos",
       "website": "atos.net",
       "country": "fr",
-      "final_score": 0.5702,
+      "final_score": 0.1681,
       "score_breakdown": {
         "embedding": 0.045,
-        "naics": 1.0,
+        "naics": 0.5,
         "keyword": 1.0
       },
       "gate_passed": true,
@@ -107,16 +123,20 @@
       "matched_concepts": [
         "software"
       ],
-      "llm_verdict": null
+      "llm_verdict": {
+        "match": false,
+        "reason": "Atos' primary industry is Computer Systems Design Services, which is a subset of the broader IT Consulting Services category, but its core offerings are more focused on digital transformation, cloud infrastructure, and cybersecurity, which are not explicitly mentioned in the query. However, the company's business model and target markets align closely with the query's intent.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "Mphasis",
       "website": "mphasis.com",
       "country": "us",
-      "final_score": 0.5697,
+      "final_score": 0.1679,
       "score_breakdown": {
         "embedding": 0.0438,
-        "naics": 1.0,
+        "naics": 0.5,
         "keyword": 1.0
       },
       "gate_passed": true,
@@ -125,16 +145,20 @@
       "matched_concepts": [
         "software"
       ],
-      "llm_verdict": null
+      "llm_verdict": {
+        "match": false,
+        "reason": "Mphasis's primary industry is Computer Systems Design Services, which is a subset of the broader IT Services industry, not a public software company with more than 1,000 employees.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "DWS Group",
       "website": "hcltech.com",
       "country": "au",
-      "final_score": 0.567,
+      "final_score": 0.1668,
       "score_breakdown": {
         "embedding": 0.0379,
-        "naics": 1.0,
+        "naics": 0.5,
         "keyword": 1.0
       },
       "gate_passed": true,
@@ -143,16 +167,20 @@
       "matched_concepts": [
         "software"
       ],
-      "llm_verdict": null
+      "llm_verdict": {
+        "match": false,
+        "reason": "DWS Group's primary industry is Computer Systems Design Services, which is a subset of the broader IT Consulting Services industry. The company's core offerings, such as Robotics Process Automation Services and Digital Transformation Consulting, are specific to the IT Consulting Services industry.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "Genpact",
       "website": "genpact.com",
       "country": "us",
-      "final_score": 0.566,
+      "final_score": 0.1664,
       "score_breakdown": {
         "embedding": 0.0356,
-        "naics": 1.0,
+        "naics": 0.5,
         "keyword": 1.0
       },
       "gate_passed": true,
@@ -161,16 +189,20 @@
       "matched_concepts": [
         "software"
       ],
-      "llm_verdict": null
+      "llm_verdict": {
+        "match": false,
+        "reason": "Genpact's primary industry is Computer Systems Design Services, which is a subset of the broader IT services industry, but not a software company in the classical sense. The company's core offerings are more focused on business process outsourcing and technology solutions rather than developing or selling software.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "CGI",
       "website": "cgi.com",
       "country": "ca",
-      "final_score": 0.5652,
+      "final_score": 0.1661,
       "score_breakdown": {
         "embedding": 0.0337,
-        "naics": 1.0,
+        "naics": 0.5,
         "keyword": 1.0
       },
       "gate_passed": true,
@@ -179,16 +211,20 @@
       "matched_concepts": [
         "software"
       ],
-      "llm_verdict": null
+      "llm_verdict": {
+        "match": false,
+        "reason": "CGI's primary industry is Computer Systems Design Services, which is a subset of the broader IT Services industry, not a public software company with more than 1,000 employees.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "NTT DATA",
       "website": "nttdata.com",
       "country": "jp",
-      "final_score": 0.5633,
+      "final_score": 0.1653,
       "score_breakdown": {
         "embedding": 0.0295,
-        "naics": 1.0,
+        "naics": 0.5,
         "keyword": 1.0
       },
       "gate_passed": true,
@@ -197,16 +233,20 @@
       "matched_concepts": [
         "software"
       ],
-      "llm_verdict": null
+      "llm_verdict": {
+        "match": false,
+        "reason": "NTT DATA's primary industry is Computer Systems Design Services, which is a subset of the broader IT consulting and services industry, not a specific software company with more than 1,000 employees.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "Tata Consultancy Services",
       "website": "tcs.com",
       "country": "in",
-      "final_score": 0.5198,
+      "final_score": 0.1479,
       "score_breakdown": {
         "embedding": 0.118,
-        "naics": 1.0,
+        "naics": 0.5,
         "keyword": 0.6667
       },
       "gate_passed": true,
@@ -215,16 +255,20 @@
       "matched_concepts": [
         "software"
       ],
-      "llm_verdict": null
+      "llm_verdict": {
+        "match": false,
+        "reason": "Tata Consultancy Services primarily provides IT consulting and outsourcing services, which is a subset of the broader software industry, but does not directly match the query's specific industry of 'Public software companies' as it is not a software company in the classical sense.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "Wipro",
       "website": "wipro.com",
       "country": "in",
-      "final_score": 0.497,
+      "final_score": 0.1388,
       "score_breakdown": {
         "embedding": 0.0675,
-        "naics": 1.0,
+        "naics": 0.5,
         "keyword": 0.6667
       },
       "gate_passed": true,
@@ -233,16 +277,20 @@
       "matched_concepts": [
         "software"
       ],
-      "llm_verdict": null
+      "llm_verdict": {
+        "match": false,
+        "reason": "Wipro's primary industry is Computer Systems Design Services, which is a subset of the broader IT services industry, not a public software company with more than 1,000 employees.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "Leidos",
       "website": "leidos.com",
       "country": "us",
-      "final_score": 0.4954,
+      "final_score": 0.1382,
       "score_breakdown": {
         "embedding": 0.0639,
-        "naics": 1.0,
+        "naics": 0.5,
         "keyword": 0.6667
       },
       "gate_passed": true,
@@ -251,16 +299,20 @@
       "matched_concepts": [
         "software"
       ],
-      "llm_verdict": null
+      "llm_verdict": {
+        "match": false,
+        "reason": "Leidos' primary industry is Computer Systems Design Services, which is a subset of the broader IT Consulting Services and Systems Integration and Engineering Services, but not a direct match for the query's 'Public software companies' intent.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "Booz Allen",
       "website": "boozallen.com",
       "country": "us",
-      "final_score": 0.492,
+      "final_score": 0.1368,
       "score_breakdown": {
         "embedding": 0.0564,
-        "naics": 1.0,
+        "naics": 0.5,
         "keyword": 0.6667
       },
       "gate_passed": true,
@@ -269,7 +321,11 @@
       "matched_concepts": [
         "software"
       ],
-      "llm_verdict": null
+      "llm_verdict": {
+        "match": false,
+        "reason": "Although Booz Allen's primary industry is Computer Systems Design Services, its core offerings are more focused on Systems Engineering and Integration, Research and Development Services, and other services that don't directly align with the query's intent of 'Public software companies'. This suggests that Booz Allen's business is not primarily focused on software development.",
+        "votes": {}
+      }
     }
   ]
 }

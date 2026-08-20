@@ -2,6 +2,28 @@
   "query": "Logistics companies in Romania",
   "results": [
     {
+      "operational_name": "Portul Constanta",
+      "website": "portofconstantza.com",
+      "country": "ro",
+      "final_score": 0.5808,
+      "score_breakdown": {
+        "embedding": 0.013,
+        "naics": 1.0,
+        "keyword": 0.5
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "logistics"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Portul Constanta's core business is focused on maritime and river port operations, which aligns with the query's industry/role intent of 'Logistics companies in Romania'. The company's primary industry (NAICS) is also Port and Harbor Operations, further supporting the match.",
+        "votes": {}
+      }
+    },
+    {
       "operational_name": "Brasov Industrial Portfolio",
       "website": "brasov-industrialportfolio.ro",
       "country": "ro",
@@ -38,14 +60,14 @@
       "llm_verdict": null
     },
     {
-      "operational_name": "Po\u0219ta Rom\u00e2n\u0103",
-      "website": "posta-romana.ro",
+      "operational_name": "METRO Rom\u00e2nia",
+      "website": "metro.ro",
       "country": "ro",
-      "final_score": 0.346,
+      "final_score": 0.2853,
       "score_breakdown": {
-        "embedding": 0.0651,
+        "embedding": 0.1154,
         "naics": 0.0,
-        "keyword": 0.6667
+        "keyword": 0.3333
       },
       "gate_passed": true,
       "hard_fail_reasons": [],
@@ -55,95 +77,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Po\u0219ta Rom\u00e2n\u0103's primary industry is postal services, which directly matches the query's term 'Logistics companies in Romania'.",
-        "votes": {}
-      }
-    },
-    {
-      "operational_name": "OSCAR",
-      "website": "oscars.ro",
-      "country": "ro",
-      "final_score": 0.3288,
-      "score_breakdown": {
-        "embedding": 0.027,
-        "naics": 0.0,
-        "keyword": 0.6667
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "logistics"
-      ],
-      "llm_verdict": {
-        "match": true,
-        "reason": "OSCAR's primary industry is Petroleum and Petroleum Products Merchant Wholesalers, which directly matches the query's NAICS code 424720. Its core offerings are also centered around logistics and fuel distribution, making it a strong match.",
-        "votes": {}
-      }
-    },
-    {
-      "operational_name": "Transgaz",
-      "website": "transgaz.ro",
-      "country": "ro",
-      "final_score": 0.3255,
-      "score_breakdown": {
-        "embedding": 0.0196,
-        "naics": 0.0,
-        "keyword": 0.6667
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "logistics"
-      ],
-      "llm_verdict": {
-        "match": true,
-        "reason": "Transgaz's primary industry is Natural Gas Distribution, which is a subset of Logistics/Transportation, and its core offerings are directly related to the management and transmission of natural gas, indicating it is a logistics company.",
-        "votes": {}
-      }
-    },
-    {
-      "operational_name": "Romgaz",
-      "website": "romgaz.ro",
-      "country": "ro",
-      "final_score": 0.3103,
-      "score_breakdown": {
-        "embedding": 0.0784,
-        "naics": 0.0,
-        "keyword": 0.5
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "logistics"
-      ],
-      "llm_verdict": {
-        "match": true,
-        "reason": "Although Romgaz's primary industry is Natural Gas Extraction, its core offerings and target markets are primarily focused on the energy and oil and gas sectors, making it a strong match for the query.",
-        "votes": {}
-      }
-    },
-    {
-      "operational_name": "Portul Constanta",
-      "website": "portofconstantza.com",
-      "country": "ro",
-      "final_score": 0.1723,
-      "score_breakdown": {
-        "embedding": 0.013,
-        "naics": 1.0,
-        "keyword": 0.5
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "logistics"
-      ],
-      "llm_verdict": {
-        "match": false,
-        "reason": "Portul Constanta's primary industry is Port and Harbor Operations, which is a specific segment of the Logistics industry, but its core business is not directly related to logistics services.",
+        "reason": "METRO Rom\u00e2nia's primary industry is General Line Grocery Merchant Wholesalers, which is a subset of the Logistics industry, and its core offerings include Logistics and Supply Chain Management, indicating a strong connection to the query's intent.",
         "votes": {}
       }
     }

@@ -200,14 +200,14 @@
       "llm_verdict": null
     },
     {
-      "operational_name": "Crystal International",
-      "website": "crystalintl.com",
-      "country": "ca",
-      "final_score": 0.4361,
+      "operational_name": "SHEACK Packaging",
+      "website": "sheackpkg.com",
+      "country": "cn",
+      "final_score": 0.399,
       "score_breakdown": {
-        "embedding": 0.4241,
+        "embedding": 0.3947,
         "naics": 0.0,
-        "keyword": 0.381
+        "keyword": 0.2857
       },
       "gate_passed": true,
       "hard_fail_reasons": [],
@@ -217,51 +217,7 @@
       ],
       "llm_verdict": {
         "match": true,
-        "reason": "Crystal International's core business is manufacturing and providing customized packaging solutions for the cosmetics industry, making it a direct match for the query.",
-        "votes": {}
-      }
-    },
-    {
-      "operational_name": "Standard Mold",
-      "website": "standardmold.co.kr",
-      "country": "kr",
-      "final_score": 0.1329,
-      "score_breakdown": {
-        "embedding": 0.3681,
-        "naics": 0.0,
-        "keyword": 0.6667
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "packaging_supply"
-      ],
-      "llm_verdict": {
-        "match": false,
-        "reason": "Standard Mold's primary industry is plastics product manufacturing, not cosmetics packaging, despite serving the cosmetics industry. This discrepancy suggests it may not be a direct supplier of packaging materials for cosmetics brands.",
-        "votes": {}
-      }
-    },
-    {
-      "operational_name": "SHEACK Packaging",
-      "website": "sheackpkg.com",
-      "country": "cn",
-      "final_score": 0.1282,
-      "score_breakdown": {
-        "embedding": 0.3947,
-        "naics": 0.0,
-        "keyword": 0.5714
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "packaging_supply"
-      ],
-      "llm_verdict": {
-        "match": false,
-        "reason": "SHEACK Packaging's primary industry is plastics product manufacturing, not packaging materials specifically for cosmetics, and its core offerings are diverse and not exclusively focused on packaging for direct-to-consumer cosmetics brands.",
+        "reason": "SHEACK Packaging's core offerings are primarily focused on packaging solutions for the personal care and cosmetics industries, indicating a strong alignment with the query's intent.",
         "votes": {}
       }
     },
@@ -269,11 +225,11 @@
       "operational_name": "SZ SJ Packaging",
       "website": "szsjpackaging.com",
       "country": "cn",
-      "final_score": 0.1227,
+      "final_score": 0.3973,
       "score_breakdown": {
         "embedding": 0.4172,
         "naics": 0.0,
-        "keyword": 0.4762
+        "keyword": 0.2381
       },
       "gate_passed": true,
       "hard_fail_reasons": [],
@@ -282,8 +238,52 @@
         "packaging_supply"
       ],
       "llm_verdict": {
-        "match": false,
-        "reason": "SZ SJ Packaging's primary industry is plastics product manufacturing, not packaging materials specifically for cosmetics, but it does offer custom packaging solutions for the beauty and personal care industry.",
+        "match": true,
+        "reason": "SZ SJ Packaging's core business is manufacturing and supplying custom cosmetic packaging, which directly matches the query's industry/role/product intent.",
+        "votes": {}
+      }
+    },
+    {
+      "operational_name": "Crystal International",
+      "website": "crystalintl.com",
+      "country": "ca",
+      "final_score": 0.3885,
+      "score_breakdown": {
+        "embedding": 0.4241,
+        "naics": 0.0,
+        "keyword": 0.1905
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Crystal International's core offerings are primarily focused on manufacturing and providing customized packaging solutions for the cosmetics industry, indicating a strong alignment with the query's intent.",
+        "votes": {}
+      }
+    },
+    {
+      "operational_name": "Ningbo Onson",
+      "website": "onsonpackaging.com",
+      "country": "cn",
+      "final_score": 0.367,
+      "score_breakdown": {
+        "embedding": 0.4292,
+        "naics": 0.0,
+        "keyword": 0.0952
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Ningbo Onson's primary industry is plastics product manufacturing, which is not directly related to packaging materials for cosmetics. The company's core offerings are custom cosmetic packaging development and manufacturing, indicating a strong focus on packaging for the cosmetics industry.",
         "votes": {}
       }
     }

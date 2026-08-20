@@ -68,32 +68,49 @@ class OllamaVerifier:
         return self._available
 
     def _build_prompt(self, query: str, company_summary: str) -> str:
-        # Two things made this prompt noticeably stricter than an obvious
-        # first draft, verified against known false positives (an oil
-        # refiner and a forklift manufacturer both mention "logistics" and
-        # "distribution" in their descriptions, but aren't logistics
-        # companies): (1) explicitly telling the model to reject companies
-        # whose CORE business is something else even if the query's
-        # vocabulary appears in passing, and (2) asking for a short
-        # "reasoning" field BEFORE "match" in the JSON, which gives the
-        # model a place to work through the distinction instead of
-        # pattern-matching straight to an answer. Without both, a 3B model
-        # defaulted to agreeing with almost everything. A further pass
-        # adding explicit contrastive examples made it strict to a fault
-        # (rejecting a literal warehousing-for-hire company) - overfitting
-        # to a handful of test cases in the other direction, so it was
-        # dropped in favor of this shorter, more balanced version.
+        # Three things shaped this prompt, each fixing a specific observed
+        # failure rather than a hypothetical one:
+        # (1) explicitly telling the model to reject companies whose CORE
+        #     business is something else even if the query's vocabulary
+        #     appears in passing - without this, a 3B model agreed with
+        #     almost everything (an oil refiner and a forklift maker both
+        #     "matched" a logistics query).
+        # (2) asking for a short "reasoning" field BEFORE "match" in the
+        #     JSON, giving the model a place to work through the
+        #     distinction instead of pattern-matching straight to an
+        #     answer. A further pass adding explicit contrastive examples
+        #     made it strict to a fault (rejecting a literal
+        #     warehousing-for-hire company) - overfitting to a handful of
+        #     visible test cases in the other direction, so it was dropped.
+        # (3) explicitly telling the model NOT to re-litigate numeric/
+        #     factual constraints (employees, revenue, founding year,
+        #     public/private, country) - those are already checked by
+        #     separate hard gates before a company ever reaches this
+        #     prompt. Without this, the model would confidently assert
+        #     constraints were satisfied for companies whose profile
+        #     explicitly says "unknown" for that field (e.g. claiming a
+        #     company "was founded after 2018" when Founded: unknown) -
+        #     fabricating confirmation of something it had no basis to
+        #     confirm, rather than reasoning only about industry/role fit.
         return (
             "You are a strict B2B analyst qualifying ONE company against a search "
             "query for a company database.\n\n"
             f"Query: {query}\n\n"
             f"Company profile:\n{company_summary}\n\n"
-            "Task: decide if this company itself IS what the query asks for - not "
-            "a company that merely uses, sells to, or is loosely associated with "
-            "that space. Be strict: a company whose core business is something "
-            "else does NOT match just because the query's vocabulary appears "
-            "somewhere in its description.\n\n"
-            "First think in a short \"reasoning\" field (1-2 sentences), then decide.\n"
+            "Task: decide if this company's actual BUSINESS/INDUSTRY/ROLE is what "
+            "the query is asking for - not a company that merely uses, sells to, or "
+            "is loosely associated with that space. Be strict: a company whose core "
+            "business is something else does NOT match just because the query's "
+            "vocabulary appears somewhere in its description.\n\n"
+            "Important: any numeric or factual filters in the query (employee count, "
+            "revenue, founding year, public/private, country) have ALREADY been "
+            "checked separately before this company reached you - do not use them to "
+            "justify your decision, and never assume a value marked 'unknown' in the "
+            "profile satisfies the query. Base your decision ONLY on whether the "
+            "company's business itself matches the query's industry/role/product "
+            "intent.\n\n"
+            "First think in a short \"reasoning\" field (1-2 sentences) about the "
+            "business/industry/role fit only, then decide.\n"
             'Respond with ONLY compact JSON in this exact shape: '
             '{"reasoning": "<1-2 sentences>", "match": true or false}'
         )

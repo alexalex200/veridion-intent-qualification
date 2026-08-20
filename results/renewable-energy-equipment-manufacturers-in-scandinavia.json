@@ -17,7 +17,8 @@
       "matched_concepts": [
         "clean_energy",
         "renewable_equipment"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "ENERCON",
@@ -35,7 +36,8 @@
       "matched_concepts": [
         "clean_energy",
         "renewable_equipment"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "R\u00f6gle Vindkraftpark",
@@ -53,7 +55,8 @@
       "matched_concepts": [
         "clean_energy",
         "renewable_equipment"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Norhybrid Renewables",
@@ -71,7 +74,54 @@
       "matched_concepts": [
         "clean_energy",
         "renewable_equipment"
-      ]
+      ],
+      "llm_verdict": null
+    },
+    {
+      "operational_name": "Tesla Ocean Turbine",
+      "website": "teslaoceanturbine.com",
+      "country": "se",
+      "final_score": 0.5914,
+      "score_breakdown": {
+        "embedding": 0.1972,
+        "naics": 1.0,
+        "keyword": 0.2105
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy",
+        "renewable_equipment"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Tesla Ocean Turbine's primary industry is Turbine and Turbine Generator Set Units Manufacturing, which is a subset of the broader Renewable Energy Equipment Manufacturers industry. The company's focus on tidal energy harvesting systems aligns with the query's intent.",
+        "votes": {}
+      }
+    },
+    {
+      "operational_name": "Pellbin Turbine",
+      "website": "pellbin.se",
+      "country": "se",
+      "final_score": 0.5772,
+      "score_breakdown": {
+        "embedding": 0.1657,
+        "naics": 1.0,
+        "keyword": 0.2105
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "clean_energy",
+        "renewable_equipment"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "Pellbin Turbine's primary industry is Turbine and Turbine Generator Set Units Manufacturing, which is a subset of the broader Renewable Energy Equipment Manufacturers industry. The company's focus on ocean and tidal current energy production aligns with the query's intent.",
+        "votes": {}
+      }
     },
     {
       "operational_name": "MantaWind",
@@ -89,7 +139,8 @@
       "matched_concepts": [
         "clean_energy",
         "renewable_equipment"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "windainergy",
@@ -107,7 +158,8 @@
       "matched_concepts": [
         "clean_energy",
         "renewable_equipment"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Vestas",
@@ -125,7 +177,8 @@
       "matched_concepts": [
         "clean_energy",
         "renewable_equipment"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Logic-Energy",
@@ -143,7 +196,8 @@
       "matched_concepts": [
         "clean_energy",
         "renewable_equipment"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Sol Industries",
@@ -161,7 +215,8 @@
       "matched_concepts": [
         "clean_energy",
         "renewable_equipment"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Climatico",
@@ -179,7 +234,8 @@
       "matched_concepts": [
         "clean_energy",
         "renewable_equipment"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Norwin Energy",
@@ -197,7 +253,8 @@
       "matched_concepts": [
         "clean_energy",
         "renewable_equipment"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Verta",
@@ -215,7 +272,8 @@
       "matched_concepts": [
         "clean_energy",
         "renewable_equipment"
-      ]
+      ],
+      "llm_verdict": null
     },
     {
       "operational_name": "Thybor\u00f8n Sydhavn 2 | Vestas-m\u00f8lle",
@@ -233,43 +291,8 @@
       "matched_concepts": [
         "clean_energy",
         "renewable_equipment"
-      ]
-    },
-    {
-      "operational_name": "Kraftkar Energi",
-      "website": "kraftkarenergi.no",
-      "country": "no",
-      "final_score": 0.5404,
-      "score_breakdown": {
-        "embedding": 0.3002,
-        "naics": 1.0,
-        "keyword": 0.4211
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "clean_energy",
-        "renewable_equipment"
-      ]
-    },
-    {
-      "operational_name": "Envision Energy Denmark",
-      "website": null,
-      "country": "dk",
-      "final_score": 0.5342,
-      "score_breakdown": {
-        "embedding": 0.2864,
-        "naics": 1.0,
-        "keyword": 0.4211
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "clean_energy",
-        "renewable_equipment"
-      ]
+      ],
+      "llm_verdict": null
     }
   ]
 }
