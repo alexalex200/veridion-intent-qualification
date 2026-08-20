@@ -128,6 +128,28 @@
       "llm_verdict": null
     },
     {
+      "operational_name": "SHEACK Packaging",
+      "website": "sheackpkg.com",
+      "country": "cn",
+      "final_score": 0.6205,
+      "score_breakdown": {
+        "embedding": 0.3947,
+        "naics": 0.5,
+        "keyword": 0.5714
+      },
+      "gate_passed": true,
+      "hard_fail_reasons": [],
+      "unverified_fields": [],
+      "matched_concepts": [
+        "packaging_supply"
+      ],
+      "llm_verdict": {
+        "match": true,
+        "reason": "SHEACK Packaging's core offerings are primarily focused on packaging solutions for the personal care and cosmetics industries, indicating a strong alignment with the query's intent.",
+        "votes": {}
+      }
+    },
+    {
       "operational_name": "Aurelo Packaging Co",
       "website": "aurelopackaging.com.au",
       "country": "au",
@@ -242,42 +264,6 @@
         "reason": "Silver Spur's core offerings include Custom Packaging Product Manufacturing, Cosmetic and Personal Care Packaging Solutions, and Stock Packaging Product Manufacturing, which directly aligns with the query's requirement for packaging materials for a direct-to-consumer cosmetics brand.",
         "votes": {}
       }
-    },
-    {
-      "operational_name": "Standard Mold",
-      "website": "standardmold.co.kr",
-      "country": "kr",
-      "final_score": 0.4823,
-      "score_breakdown": {
-        "embedding": 0.3681,
-        "naics": 0.5,
-        "keyword": 0.6667
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "packaging_supply"
-      ],
-      "llm_verdict": null
-    },
-    {
-      "operational_name": "SHEACK Packaging",
-      "website": "sheackpkg.com",
-      "country": "cn",
-      "final_score": 0.4705,
-      "score_breakdown": {
-        "embedding": 0.3947,
-        "naics": 0.5,
-        "keyword": 0.5714
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "packaging_supply"
-      ],
-      "llm_verdict": null
     }
   ]
 }

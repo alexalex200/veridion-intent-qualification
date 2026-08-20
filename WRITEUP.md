@@ -325,26 +325,41 @@ signal.** The audit script (`naics_audit.py`-style, per 3.4/priorities)
 and manually reading mid-ranked results rather than only the top-5 are
 what caught these, in that order of usefulness.
 
-**Coarse-industry over-matching - now largely fixed by the same
-mechanism.** Query: *"Public software companies with more than 1,000
-employees"*. Before the graduated-NAICS fix, the full top-15 was
-IT-services/consulting firms (`Fujitsu`, `Capgemini`, `Atos`, `SAIC`,
-`Genpact`, `CGI`, `NTT DATA`, `Tata Consultancy Services`, `Wipro`...) -
-none of them "software companies" in the product-company sense a reader
-means, all of them `naics=1.0` under the old binary scoring, all
-confidently above `borderline_high` and therefore never reaching the LLM
-stage at all. After marking `5415x` codes as weak (0.5 credit) instead of
-strong, their scores dropped enough to land in the borderline band - and
-the (now hallucination-fixed, see below) LLM stage correctly rejected
-them: *"Fujitsu's primary industry is Computer Systems Design Services,
-which [does not match a software product company]"*, same for EPAM,
-Capgemini, SAIC, Atos. Only `Globant` (score 0.467) still clears
-`borderline_high` outright - a residual imperfection, since Globant is
-also IT-services under the same NAICS code, just with high enough
-keyword/embedding scores to skip verification. This is the concrete
-limit of the design stated in 3.1: the LLM safety net only catches errors
-in the *ambiguous* band, not ones the cheap stages are still (wrongly)
-confident about.
+**Coarse-industry over-matching - fixed in two passes, not one.** Query:
+*"Public software companies with more than 1,000 employees"*. Before the
+graduated-NAICS fix, the full top-15 was IT-services/consulting firms
+(`Fujitsu`, `Capgemini`, `Atos`, `SAIC`, `Genpact`, `CGI`, `NTT DATA`,
+`Tata Consultancy Services`, `Wipro`...), all `naics=1.0` under the old
+binary scoring, all confidently above `borderline_high` and therefore
+never reaching the LLM stage at all. Marking `5415x` codes as weak (0.5
+credit) instead of strong dropped their scores enough to land in the
+borderline band, and the LLM stage correctly rejected most of them:
+*"Fujitsu's primary industry is Computer Systems Design Services, which
+[does not match a software product company]"*. But `Globant` (score
+0.467, same weak `naics=0.5`) still cleared `borderline_high` outright and
+skipped verification entirely - on keyword+embedding alone, not because
+its industry classification was any stronger than Fujitsu's. This
+revealed a second bug, one level up from the taxonomy: **the "skip LLM if
+confident" rule only checked total score, not what the score was made
+of.** A company could reach `borderline_high` on keyword/embedding alone
+and never have its industry classification checked at all - the exact
+gap a corroboration-style design is supposed to close. Fixed by requiring
+`naics_score >= 1.0` (industry-*confirmed*, not just industry-adjacent) in
+addition to the score threshold before skipping verification
+(`qualifier/pipeline.py`). A related, sharper bug surfaced by the same fix:
+even after Globant correctly reached the LLM and got `match: false`, it
+*still* appeared in the qualified results, because the 0.4x rejection
+demotion (0.467 → 0.187) wasn't enough to push it below the 0.12 default
+threshold - a company explicitly marked "does not match" remained in its
+own "qualified companies" list. Demotion alone was never going to be
+airtight for this case, since how much demotion is "enough" depends on
+how high the pre-verification score was; an explicit `match: false`
+verdict now excludes a company outright, independent of `min_score`.
+This is the concrete limit of the design stated in 3.1, now narrowed: the
+LLM safety net catches errors in the ambiguous band **and** in
+industry-unconfirmed high scorers, but still does nothing for a company
+that manages `naics=1.0` (a real, if occasionally too-coarse, industry
+match) and a high score both at once.
 
 **Weak signal, and the LLM stage makes it *worse*, not better, when
 forced to guess.** Query: *"E-commerce companies using Shopify or similar

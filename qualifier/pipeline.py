@@ -126,8 +126,18 @@ class QualificationPipeline:
 
         if use_llm and self.llm_verifier and self.llm_verifier.available():
             for result in results[:candidate_window]:
-                if result.final_score >= borderline_high:
-                    continue  # confident match already, no need to spend a call
+                # A high total score isn't enough to skip verification on
+                # its own if NAICS only weakly corroborates it (score < 1.0
+                # - see scoring.py's graduated NAICS credit). Observed case:
+                # Globant (IT-services, naics=0.5) cleared borderline_high
+                # on keyword+embedding alone and skipped verification
+                # entirely, remaining unrejected while near-identical
+                # naics=0.5 peers (Fujitsu, Capgemini...) - which scored
+                # lower and DID reach the LLM - were correctly rejected by
+                # it. Only a naics=1.0 (industry-confirmed) match is
+                # trusted to skip the check outright.
+                if result.final_score >= borderline_high and result.naics_score >= 1.0:
+                    continue  # confident AND industry-confirmed, no need to spend a call
                 verdict = self.llm_verifier.verify(
                     query, result.company.summary_for_llm(), votes=llm_votes
                 )
@@ -140,6 +150,19 @@ class QualificationPipeline:
                     result.final_score *= LLM_REJECT_MULTIPLIER
                 # verdict.match is None (verifier call failed): leave score untouched
 
-        results = [r for r in results if r.final_score >= min_score]
+        # An explicit LLM rejection excludes a company outright, regardless
+        # of how high its rule-based score was. The multiplier above still
+        # runs (useful if a caller wants to see the demoted score), but is
+        # not sufficient on its own: a company with a high pre-verification
+        # score (Globant: keyword=1.0, embedding=0.15, naics=0.5 -> 0.47)
+        # survives even a 0.6x demotion, which would leave it "qualified"
+        # while its own llm_verdict says match=False - a contradiction a
+        # caller trusting the qualified list wouldn't see unless they
+        # inspected every verdict by hand.
+        results = [
+            r for r in results
+            if r.final_score >= min_score
+            and not (r.llm_verdict and r.llm_verdict["match"] is False)
+        ]
         results.sort(key=lambda r: r.final_score, reverse=True)
         return results[:top_k]

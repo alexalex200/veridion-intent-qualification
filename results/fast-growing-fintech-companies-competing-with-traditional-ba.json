@@ -278,50 +278,6 @@
         "reason": "EasyKassa's core business is providing enterprise software solutions, consumer internet solutions, and payment processing platforms, which directly competes with traditional banks in the European fintech space.",
         "votes": {}
       }
-    },
-    {
-      "operational_name": "SkyHarvest",
-      "website": "skyharvest.eu",
-      "country": "at",
-      "final_score": 0.1745,
-      "score_breakdown": {
-        "embedding": 0.0463,
-        "naics": 1.0,
-        "keyword": 0.4615
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "fintech"
-      ],
-      "llm_verdict": {
-        "match": false,
-        "reason": "SkyHarvest's primary industry is International, Secondary Market, and All Other Nondepository Credit Intermediation, which is a broad category that includes fintech companies, but its core offerings are focused on agricultural finance, not traditional banking or fintech services.",
-        "votes": {}
-      }
-    },
-    {
-      "operational_name": "CTC FUND",
-      "website": "ctcfundlimited.com",
-      "country": "gb",
-      "final_score": 0.1696,
-      "score_breakdown": {
-        "embedding": 0.1049,
-        "naics": 1.0,
-        "keyword": 0.3077
-      },
-      "gate_passed": true,
-      "hard_fail_reasons": [],
-      "unverified_fields": [],
-      "matched_concepts": [
-        "fintech"
-      ],
-      "llm_verdict": {
-        "match": false,
-        "reason": "CTC FUND's primary industry is International, Secondary Market, and All Other Nondepository Credit Intermediation, which is a subset of the broader fintech industry, but does not directly compete with traditional banks in Europe as the query suggests.",
-        "votes": {}
-      }
     }
   ]
 }
